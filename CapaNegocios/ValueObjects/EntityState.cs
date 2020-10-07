@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaDatos
+namespace CapaNegocios.ValueObjects
 {
-    class CD_Persona
+    public enum EntityState
     {
+        Added,
+        Deleted,
+        Modified
     }
 }
