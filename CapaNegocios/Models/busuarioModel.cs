@@ -13,24 +13,24 @@ namespace CapaNegocios.Models
 {
     public class busuarioModel
     {
-        private int idusuario;
+        private string idusuario;
         private string usuario;
         private string password;
-        private int idrol;
-        private int idpersona;
-        private DateTime fechaadd;
+        private string idrol;
+        private string idpersona;
+        private string fechaadd;
 
         private  IbusuarioRepository busuarioRepository;
         public EntityState State { private get; set; }
 
         //PROPIEDADES/MODELO DE VISTA/ VALIDAR DATOS
-        public int Idusuario { get => idusuario; set => idusuario = value; }
+        public string ID { get => idusuario; set => idusuario = value; }
         [Required(ErrorMessage ="El Campo es requerido")]
         public string Usuario { get => usuario; set => usuario = value; }
         public string Password { get => password; set => password = value; } //PRIVADO?
-        public int Idrol { get => idrol; set => idrol = value; }
-        public int Idpersona { get => idpersona; set => idpersona = value; }
-        public DateTime Fechaadd { get => fechaadd; set => fechaadd = value; }
+        public string Rol { get => idrol; set => idrol = value; }
+        public string Persona { get => idpersona; set => idpersona = value; }
+        public string Fecha { get => fechaadd; set => fechaadd = value; }
 
         public busuarioModel() {
             busuarioRepository = new busuarioRepository();
@@ -82,12 +82,12 @@ namespace CapaNegocios.Models
             {
                 listbusuario.Add(new busuarioModel
                 {
-                    Idusuario = item.idusuario,
+                    ID = item.idusuario,
                     Usuario = item.usuario,
                     Password = item.password,
-                    Idrol = item.idrol,
-                    Idpersona = item.idpersona,
-                    Fechaadd = item.fechaadd
+                    Rol = item.idrol,
+                    Persona = item.idpersona,
+                    Fecha = item.fechaadd
                 });
             }
             return listbusuario;

@@ -67,18 +67,18 @@ namespace CapaDatos.Repositories
             {
                 listUsuario.Add(new busuario
                 {
-                    idusuario = Convert.ToInt32(item[0]),
+                    idusuario = item[0].ToString(),
                     usuario = item[1].ToString(),
                     password = item[2].ToString(),
-                    idrol = Convert.ToInt32(item[3]),
-                    idpersona=Convert.ToInt32(item[4]),
-                    fechaadd= Convert.ToDateTime(item[5])
+                    idrol = item[3].ToString(),
+                    idpersona=item[4].ToString(),
+                    fechaadd= item[5].ToString()
                 });
             }
             return listUsuario;
         }
 
-        public int Remove(int idusuario)
+        public int Remove(string idusuario)
         {
             parameters = new List<SqlParameter>();
             parameters.Add(new SqlParameter("@idusuario", idusuario));

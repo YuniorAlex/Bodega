@@ -8,11 +8,11 @@ namespace CapaDatos.Entities
 {
     public class busuario
     {
-        public int idusuario { get; set; }
+        public string idusuario { get; set; }
         public string usuario { get; set; }
         public string password { get; set; }
-        public int idrol { get; set; }
-        public int idpersona { get; set; }
-        public DateTime fechaadd { get; set; }
+        public string idrol { get; set; }
+        public string idpersona { get; set; }
+        public string fechaadd { get; set; }
     }
 }

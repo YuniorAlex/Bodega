@@ -10,7 +10,7 @@ namespace CapaDatos.Contracts
     {
         int Add(Entity entity);
         int Edit(Entity entity);
-        int Remove(int idusuario);//IDENTIFICADOR DE LA PK DE LA TABLA
+        int Remove(string idusuario);//IDENTIFICADOR DE LA PK DE LA TABLA
         IEnumerable<Entity> GetAll();
     }
 }
