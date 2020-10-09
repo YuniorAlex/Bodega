@@ -16,15 +16,20 @@ namespace CapaPresentacion.Forms
         {
             InitializeComponent();
         }
+        public class Formulario : FormUsuario
+        {
+
+        }
 
         private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
         {
 
         }
 
-        private void dfgdsfgdsfToolStripMenuItem_Click(object sender, EventArgs e)
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Formulario frm = new Formulario();
+            frm.Show();
         }
     }
 }
