@@ -62,6 +62,36 @@
     <Compile Include="Forms\FormBienvenida.Designer.cs">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClienteEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClienteEditar.Designer.cs">
+      <DependentUpon>FormClienteEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCompra.Designer.cs">
+      <DependentUpon>FormCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmpleado.Designer.cs">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +103,36 @@
     </Compile>
     <Compile Include="Forms\FormProducto.Designer.cs">
       <DependentUpon>FormProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProductoAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProductoAgregar.Designer.cs">
+      <DependentUpon>FormProductoAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProductoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProductoEditar.Designer.cs">
+      <DependentUpon>FormProductoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProveedor.Designer.cs">
+      <DependentUpon>FormProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProveedorAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProveedorAgregar.Designer.cs">
+      <DependentUpon>FormProveedorAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProveedorEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProveedorEditar.Designer.cs">
+      <DependentUpon>FormProveedorEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormUsuario.cs">
       <SubType>Form</SubType>
@@ -86,10 +146,31 @@
     <Compile Include="Forms\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVenta.Designer.cs">
+      <DependentUpon>FormVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormBienvenida.resx">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClienteEditar.resx">
+      <DependentUpon>FormClienteEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCompra.resx">
+      <DependentUpon>FormCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEmpleado.resx">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
@@ -97,11 +178,29 @@
     <EmbeddedResource Include="Forms\FormProducto.resx">
       <DependentUpon>FormProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProductoAgregar.resx">
+      <DependentUpon>FormProductoAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProductoEditar.resx">
+      <DependentUpon>FormProductoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProveedor.resx">
+      <DependentUpon>FormProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProveedorAgregar.resx">
+      <DependentUpon>FormProveedorAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProveedorEditar.resx">
+      <DependentUpon>FormProveedorEditar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVenta.resx">
+      <DependentUpon>FormVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

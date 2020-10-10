@@ -12,6 +12,7 @@ namespace CapaPresentacion.Forms
 {
     public partial class FormPrincipal : Form
     {
+        
         public FormPrincipal()
         {
             InitializeComponent();
@@ -46,7 +47,14 @@ namespace CapaPresentacion.Forms
 
         private void btncerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if(MessageBox.Show("¿Esta seguro de cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                //DISEÑO DE LA ALERTA
+                Application.Exit();
+            }
+            else{
+                //DISEÑO ALERTA
+            }
         }
 
         private void btnminimizar_Click(object sender, EventArgs e)
@@ -64,10 +72,61 @@ namespace CapaPresentacion.Forms
             this.panelContenedor.Controls.Add(fh);
             this.panelContenedor.Tag = fh;
             fh.Show();
+            
         }
         private void btnproducto_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new FormProducto());
+            FormProducto frm = new FormProducto();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        }
+        private void mostrarInicio()
+        {
+            AbrirFormInPanel(new FormInicio());
+        }
+        private void mostrarInicioAlCerrarForm(object sender, FormClosedEventArgs e)
+        {
+            mostrarInicio();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            mostrarInicio();
+        }
+
+        private void btnventa_Click(object sender, EventArgs e)
+        {
+            FormVenta frm = new FormVenta();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        }
+
+        private void btncliente_Click(object sender, EventArgs e)
+        {
+            FormCliente frm = new FormCliente();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        }
+
+        private void btnproveedor_Click(object sender, EventArgs e)
+        {
+            FormProveedor frm = new FormProveedor();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        }
+
+        private void btncompra_Click(object sender, EventArgs e)
+        {
+            FormCompra frm = new FormCompra();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        }
+
+        private void btnempleado_Click(object sender, EventArgs e)
+        {
+            FormEmpleado frm = new FormEmpleado();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
         }
     }
 }

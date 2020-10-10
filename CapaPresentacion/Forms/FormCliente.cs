@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Forms
 {
-    public partial class FormProducto : Form
+    public partial class FormCliente : Form
     {
-        public FormProducto()
+        public FormCliente()
         {
             InitializeComponent();
         }
@@ -24,28 +24,17 @@ namespace CapaPresentacion.Forms
 
         private void btneditar_Click(object sender, EventArgs e)
         {
-            FormProductoEditar frm = new FormProductoEditar();
+            FormClienteEditar frm = new FormClienteEditar();
             /*if(dataGridViewProducto.SelectedRows.Count>0)
             {
                 //frm.textid.Text = dataGridViewProducto.CurrentRow.Cells[0].Value.ToString();
                 //HACER IGUAL PARA LOS DEMAS CAMPOS*/
-                frm.ShowDialog();
+            frm.ShowDialog();
             /*}
             else
             {
                 MessageBox.Show("Debe seleccionar fila!");
             }*/
-        }
-
-        private void btnnuevo_Click(object sender, EventArgs e)
-        {
-            FormProductoAgregar frm = new FormProductoAgregar();
-            frm.ShowDialog();
-        }
-
-        private void FormProducto_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
