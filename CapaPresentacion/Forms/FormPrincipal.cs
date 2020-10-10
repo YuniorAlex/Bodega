@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Forms
 {
-    public partial class Principal : Form
+    public partial class FormPrincipal : Form
     {
-        public Principal()
+        public FormPrincipal()
         {
             InitializeComponent();
         }
@@ -30,6 +30,28 @@ namespace CapaPresentacion.Forms
         {
             Formulario frm = new Formulario();
             frm.Show();
+        }
+
+        private void btnmenu_Click(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width == 250)
+            {
+                MenuVertical.Width = 70;
+            }
+            else
+            {
+                MenuVertical.Width = 250;
+            }
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
