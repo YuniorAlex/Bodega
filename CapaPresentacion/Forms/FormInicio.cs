@@ -22,5 +22,10 @@ namespace CapaPresentacion.Forms
             lblhora.Text = DateTime.Now.ToLongTimeString();
             lblfecha.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void FormInicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

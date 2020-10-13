@@ -36,5 +36,10 @@ namespace CapaPresentacion.Forms
                 MessageBox.Show("Debe seleccionar fila!");
             }*/
         }
+
+        private void FormCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
