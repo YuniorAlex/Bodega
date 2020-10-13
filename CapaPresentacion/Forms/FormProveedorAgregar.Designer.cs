@@ -77,7 +77,7 @@
             this.btncerrar.Location = new System.Drawing.Point(579, 3);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(18, 18);
-            this.btncerrar.TabIndex = 8;
+            this.btncerrar.TabIndex = 11;
             this.btncerrar.Text = "X";
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
@@ -106,7 +106,7 @@
             this.btncancelar.Location = new System.Drawing.Point(342, 460);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(200, 30);
-            this.btncancelar.TabIndex = 7;
+            this.btncancelar.TabIndex = 10;
             this.btncancelar.Text = "Cancelar";
             this.btncancelar.UseVisualStyleBackColor = false;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
@@ -126,7 +126,7 @@
             this.button1.Location = new System.Drawing.Point(50, 460);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 30);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -139,7 +139,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(160, 387);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(221, 23);
-            this.dateTimePicker1.TabIndex = 42;
+            this.dateTimePicker1.TabIndex = 8;
             // 
             // textBox5
             // 
@@ -148,7 +148,7 @@
             this.textBox5.Location = new System.Drawing.Point(160, 267);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(221, 23);
-            this.textBox5.TabIndex = 39;
+            this.textBox5.TabIndex = 5;
             // 
             // textBox3
             // 
@@ -157,7 +157,7 @@
             this.textBox3.Location = new System.Drawing.Point(160, 227);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(221, 23);
-            this.textBox3.TabIndex = 38;
+            this.textBox3.TabIndex = 4;
             // 
             // textBox1
             // 
@@ -166,7 +166,7 @@
             this.textBox1.Location = new System.Drawing.Point(160, 147);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(221, 23);
-            this.textBox1.TabIndex = 36;
+            this.textBox1.TabIndex = 2;
             // 
             // textBox4
             // 
@@ -175,7 +175,7 @@
             this.textBox4.Location = new System.Drawing.Point(160, 107);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(221, 23);
-            this.textBox4.TabIndex = 35;
+            this.textBox4.TabIndex = 1;
             // 
             // label8
             // 
@@ -264,7 +264,7 @@
             this.textBox6.Location = new System.Drawing.Point(160, 347);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(221, 23);
-            this.textBox6.TabIndex = 44;
+            this.textBox6.TabIndex = 7;
             // 
             // textBox7
             // 
@@ -273,7 +273,7 @@
             this.textBox7.Location = new System.Drawing.Point(160, 307);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(221, 23);
-            this.textBox7.TabIndex = 45;
+            this.textBox7.TabIndex = 6;
             // 
             // pictureBox1
             // 
@@ -293,7 +293,7 @@
             this.comboBox1.Location = new System.Drawing.Point(160, 189);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(221, 23);
-            this.comboBox1.TabIndex = 47;
+            this.comboBox1.TabIndex = 3;
             // 
             // FormProveedorAgregar
             // 

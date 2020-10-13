@@ -83,7 +83,7 @@
             this.btnnuevo.Location = new System.Drawing.Point(54, 558);
             this.btnnuevo.Name = "btnnuevo";
             this.btnnuevo.Size = new System.Drawing.Size(200, 30);
-            this.btnnuevo.TabIndex = 1;
+            this.btnnuevo.TabIndex = 2;
             this.btnnuevo.Text = "Nuevo";
             this.btnnuevo.UseVisualStyleBackColor = false;
             this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
@@ -98,7 +98,7 @@
             this.btncerrar.Location = new System.Drawing.Point(1020, 9);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(18, 18);
-            this.btncerrar.TabIndex = 2;
+            this.btncerrar.TabIndex = 7;
             this.btncerrar.Text = "X";
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
@@ -116,7 +116,7 @@
             this.button2.Location = new System.Drawing.Point(546, 558);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 30);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 4;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -134,7 +134,7 @@
             this.btneditar.Location = new System.Drawing.Point(300, 558);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(200, 30);
-            this.btneditar.TabIndex = 4;
+            this.btneditar.TabIndex = 3;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
@@ -147,7 +147,7 @@
             this.dataGridViewProducto.Location = new System.Drawing.Point(27, 229);
             this.dataGridViewProducto.Name = "dataGridViewProducto";
             this.dataGridViewProducto.Size = new System.Drawing.Size(1000, 310);
-            this.dataGridViewProducto.TabIndex = 5;
+            this.dataGridViewProducto.TabIndex = 8;
             // 
             // textBox1
             // 
@@ -157,8 +157,8 @@
             this.textBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(69, 193);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(935, 25);
-            this.textBox1.TabIndex = 6;
+            this.textBox1.Size = new System.Drawing.Size(713, 25);
+            this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Buscar...";
             // 
             // label2
@@ -300,10 +300,10 @@
             this.btnimprimir.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnimprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnimprimir.Image")));
             this.btnimprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnimprimir.Location = new System.Drawing.Point(792, 150);
+            this.btnimprimir.Location = new System.Drawing.Point(792, 190);
             this.btnimprimir.Name = "btnimprimir";
             this.btnimprimir.Size = new System.Drawing.Size(200, 30);
-            this.btnimprimir.TabIndex = 20;
+            this.btnimprimir.TabIndex = 6;
             this.btnimprimir.Text = "Imprimir";
             this.btnimprimir.UseVisualStyleBackColor = false;
             // 
@@ -321,7 +321,7 @@
             this.btnexportar.Location = new System.Drawing.Point(792, 558);
             this.btnexportar.Name = "btnexportar";
             this.btnexportar.Size = new System.Drawing.Size(200, 30);
-            this.btnexportar.TabIndex = 21;
+            this.btnexportar.TabIndex = 5;
             this.btnexportar.Text = "Exportar";
             this.btnexportar.UseVisualStyleBackColor = false;
             // 
