@@ -21,5 +21,10 @@ namespace CapaPresentacion.Forms
         {
             this.Close();
         }
+
+        private void FormCompra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

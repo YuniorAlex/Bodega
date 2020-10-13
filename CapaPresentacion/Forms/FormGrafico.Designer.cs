@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion.Forms
 {
-    partial class FormEmpleado
+    partial class FormGrafico
     {
         /// <summary>
         /// Required designer variable.

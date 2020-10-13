@@ -124,7 +124,27 @@ namespace CapaPresentacion.Forms
 
         private void btnempleado_Click(object sender, EventArgs e)
         {
-            FormEmpleado frm = new FormEmpleado();
+            FormGrafico frm = new FormGrafico();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        }
+
+        private void MenuVertical_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            FormUsuario frm = new FormUsuario();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        
+        }
+
+        private void btnreporte_Click(object sender, EventArgs e)
+        {
+            FormReporte frm = new FormReporte();
             frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
             AbrirFormInPanel(frm);
         }

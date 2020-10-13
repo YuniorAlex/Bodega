@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnempleado = new System.Windows.Forms.Button();
+            this.btnUsuario = new System.Windows.Forms.Button();
+            this.btnreporte = new System.Windows.Forms.Button();
+            this.btngrafico = new System.Windows.Forms.Button();
             this.btncompra = new System.Windows.Forms.Button();
             this.btnproveedor = new System.Windows.Forms.Button();
             this.btncliente = new System.Windows.Forms.Button();
@@ -41,7 +43,6 @@
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnmenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -52,8 +53,9 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
-            this.MenuVertical.Controls.Add(this.button1);
-            this.MenuVertical.Controls.Add(this.btnempleado);
+            this.MenuVertical.Controls.Add(this.btnUsuario);
+            this.MenuVertical.Controls.Add(this.btnreporte);
+            this.MenuVertical.Controls.Add(this.btngrafico);
             this.MenuVertical.Controls.Add(this.btncompra);
             this.MenuVertical.Controls.Add(this.btnproveedor);
             this.MenuVertical.Controls.Add(this.btncliente);
@@ -64,24 +66,61 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
+            this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
-            // btnempleado
+            // btnUsuario
             // 
-            this.btnempleado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnempleado.FlatAppearance.BorderSize = 0;
-            this.btnempleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.btnempleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnempleado.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnempleado.Image = ((System.Drawing.Image)(resources.GetObject("btnempleado.Image")));
-            this.btnempleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnempleado.Location = new System.Drawing.Point(0, 469);
-            this.btnempleado.Name = "btnempleado";
-            this.btnempleado.Size = new System.Drawing.Size(250, 40);
-            this.btnempleado.TabIndex = 6;
-            this.btnempleado.Text = "   Empleados";
-            this.btnempleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnempleado.UseVisualStyleBackColor = true;
-            this.btnempleado.Click += new System.EventHandler(this.btnempleado_Click);
+            this.btnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsuario.FlatAppearance.BorderSize = 0;
+            this.btnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuario.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuario.Image")));
+            this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuario.Location = new System.Drawing.Point(0, 603);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(250, 40);
+            this.btnUsuario.TabIndex = 8;
+            this.btnUsuario.Text = "   Usuarios";
+            this.btnUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuario.UseVisualStyleBackColor = true;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
+            // 
+            // btnreporte
+            // 
+            this.btnreporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnreporte.FlatAppearance.BorderSize = 0;
+            this.btnreporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btnreporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreporte.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreporte.Image = ((System.Drawing.Image)(resources.GetObject("btnreporte.Image")));
+            this.btnreporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnreporte.Location = new System.Drawing.Point(0, 469);
+            this.btnreporte.Name = "btnreporte";
+            this.btnreporte.Size = new System.Drawing.Size(250, 40);
+            this.btnreporte.TabIndex = 7;
+            this.btnreporte.Text = "   Reportes";
+            this.btnreporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnreporte.UseVisualStyleBackColor = true;
+            this.btnreporte.Click += new System.EventHandler(this.btnreporte_Click);
+            // 
+            // btngrafico
+            // 
+            this.btngrafico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btngrafico.FlatAppearance.BorderSize = 0;
+            this.btngrafico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btngrafico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btngrafico.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngrafico.Image = ((System.Drawing.Image)(resources.GetObject("btngrafico.Image")));
+            this.btngrafico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btngrafico.Location = new System.Drawing.Point(0, 536);
+            this.btngrafico.Name = "btngrafico";
+            this.btngrafico.Size = new System.Drawing.Size(250, 40);
+            this.btngrafico.TabIndex = 6;
+            this.btngrafico.Text = "   Graficos";
+            this.btngrafico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btngrafico.UseVisualStyleBackColor = true;
+            this.btngrafico.Click += new System.EventHandler(this.btnempleado_Click);
             // 
             // btncompra
             // 
@@ -232,23 +271,6 @@
             this.panelContenedor.Size = new System.Drawing.Size(1050, 600);
             this.panelContenedor.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 536);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 40);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "   Reportes";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,11 +303,12 @@
         private System.Windows.Forms.PictureBox btnminimizar;
         private System.Windows.Forms.PictureBox btncerrar;
         private System.Windows.Forms.Button btnproducto;
-        private System.Windows.Forms.Button btnempleado;
+        private System.Windows.Forms.Button btngrafico;
         private System.Windows.Forms.Button btncompra;
         private System.Windows.Forms.Button btnproveedor;
         private System.Windows.Forms.Button btncliente;
         private System.Windows.Forms.Button btnventa;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnreporte;
+        private System.Windows.Forms.Button btnUsuario;
     }
 }

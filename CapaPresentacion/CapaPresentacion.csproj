@@ -150,6 +150,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReporte.Designer.cs">
+      <DependentUpon>FormReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuario.Designer.cs">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,11 +186,11 @@
     <Compile Include="Forms\FormCompra.Designer.cs">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormEmpleado.cs">
+    <Compile Include="Forms\FormGrafico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormEmpleado.Designer.cs">
-      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    <Compile Include="Forms\FormGrafico.Designer.cs">
+      <DependentUpon>FormGrafico.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormInicio.cs">
       <SubType>Form</SubType>
@@ -228,17 +240,17 @@
     <Compile Include="Forms\FormProveedorEditar.Designer.cs">
       <DependentUpon>FormProveedorEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormUsuario.Designer.cs">
-      <DependentUpon>FormUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsuarioAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuarioAgregar.Designer.cs">
+      <DependentUpon>FormUsuarioAgregar.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormVenta.cs">
       <SubType>Form</SubType>
@@ -248,6 +260,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormReporte.resx">
+      <DependentUpon>FormReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuario.resx">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormBienvenida.resx">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,8 +278,8 @@
     <EmbeddedResource Include="Forms\FormCompra.resx">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormEmpleado.resx">
-      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormGrafico.resx">
+      <DependentUpon>FormGrafico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
@@ -287,11 +305,11 @@
     <EmbeddedResource Include="Forms\FormProveedorEditar.resx">
       <DependentUpon>FormProveedorEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormUsuario.resx">
-      <DependentUpon>FormUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuarioAgregar.resx">
+      <DependentUpon>FormUsuarioAgregar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormVenta.resx">
       <DependentUpon>FormVenta.cs</DependentUpon>

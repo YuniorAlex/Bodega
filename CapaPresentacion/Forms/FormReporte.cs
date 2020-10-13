@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Forms
 {
-    public partial class FormEmpleado : Form
+    public partial class FormReporte : Form
     {
-        public FormEmpleado()
+        public FormReporte()
         {
             InitializeComponent();
         }
 
-        private void btncerrar_Click(object sender, EventArgs e)
+        private void FormReporte_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }

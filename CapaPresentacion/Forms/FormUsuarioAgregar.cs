@@ -10,17 +10,21 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Forms
 {
-    public partial class FormUsuario : Form
+    public partial class FormUsuarioAgregar : Form
     {
-        public FormUsuario()
+        public FormUsuarioAgregar()
         {
             InitializeComponent();
         }
 
-        private void btnimprimir_Click(object sender, EventArgs e)
+        private void btncerrar_Click(object sender, EventArgs e)
         {
-            FormUsuarioAgregar frm = new FormUsuarioAgregar();
-            frm.ShowDialog();
+            this.Close();
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
