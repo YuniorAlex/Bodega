@@ -396,6 +396,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCliente";
             this.Text = "FormCliente";
+            this.Load += new System.EventHandler(this.FormCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
