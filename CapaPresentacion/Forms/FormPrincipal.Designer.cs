@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btncerrarsesion = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnreporte = new System.Windows.Forms.Button();
             this.btngrafico = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
+            this.MenuVertical.Controls.Add(this.btncerrarsesion);
             this.MenuVertical.Controls.Add(this.btnUsuario);
             this.MenuVertical.Controls.Add(this.btnreporte);
             this.MenuVertical.Controls.Add(this.btngrafico);
@@ -68,6 +70,24 @@
             this.MenuVertical.TabIndex = 0;
             this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
+            // btncerrarsesion
+            // 
+            this.btncerrarsesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrarsesion.FlatAppearance.BorderSize = 0;
+            this.btncerrarsesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrarsesion.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrarsesion.Image = ((System.Drawing.Image)(resources.GetObject("btncerrarsesion.Image")));
+            this.btncerrarsesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncerrarsesion.Location = new System.Drawing.Point(0, 606);
+            this.btncerrarsesion.Name = "btncerrarsesion";
+            this.btncerrarsesion.Size = new System.Drawing.Size(250, 40);
+            this.btncerrarsesion.TabIndex = 9;
+            this.btncerrarsesion.Text = "  Cerrar Sesion";
+            this.btncerrarsesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btncerrarsesion.UseVisualStyleBackColor = true;
+            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
+            // 
             // btnUsuario
             // 
             this.btnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -77,7 +97,7 @@
             this.btnUsuario.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuario.Image")));
             this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuario.Location = new System.Drawing.Point(0, 603);
+            this.btnUsuario.Location = new System.Drawing.Point(0, 547);
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.Size = new System.Drawing.Size(250, 40);
             this.btnUsuario.TabIndex = 8;
@@ -95,7 +115,7 @@
             this.btnreporte.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreporte.Image = ((System.Drawing.Image)(resources.GetObject("btnreporte.Image")));
             this.btnreporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnreporte.Location = new System.Drawing.Point(0, 469);
+            this.btnreporte.Location = new System.Drawing.Point(0, 429);
             this.btnreporte.Name = "btnreporte";
             this.btnreporte.Size = new System.Drawing.Size(250, 40);
             this.btnreporte.TabIndex = 7;
@@ -113,7 +133,7 @@
             this.btngrafico.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngrafico.Image = ((System.Drawing.Image)(resources.GetObject("btngrafico.Image")));
             this.btngrafico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btngrafico.Location = new System.Drawing.Point(0, 536);
+            this.btngrafico.Location = new System.Drawing.Point(0, 488);
             this.btngrafico.Name = "btngrafico";
             this.btngrafico.Size = new System.Drawing.Size(250, 40);
             this.btngrafico.TabIndex = 6;
@@ -131,7 +151,7 @@
             this.btncompra.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncompra.Image = ((System.Drawing.Image)(resources.GetObject("btncompra.Image")));
             this.btncompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncompra.Location = new System.Drawing.Point(0, 402);
+            this.btncompra.Location = new System.Drawing.Point(0, 370);
             this.btncompra.Name = "btncompra";
             this.btncompra.Size = new System.Drawing.Size(250, 40);
             this.btncompra.TabIndex = 5;
@@ -149,7 +169,7 @@
             this.btnproveedor.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnproveedor.Image")));
             this.btnproveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnproveedor.Location = new System.Drawing.Point(0, 335);
+            this.btnproveedor.Location = new System.Drawing.Point(0, 311);
             this.btnproveedor.Name = "btnproveedor";
             this.btnproveedor.Size = new System.Drawing.Size(250, 40);
             this.btnproveedor.TabIndex = 4;
@@ -167,7 +187,7 @@
             this.btncliente.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncliente.Image = ((System.Drawing.Image)(resources.GetObject("btncliente.Image")));
             this.btncliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncliente.Location = new System.Drawing.Point(0, 268);
+            this.btncliente.Location = new System.Drawing.Point(0, 252);
             this.btncliente.Name = "btncliente";
             this.btncliente.Size = new System.Drawing.Size(250, 40);
             this.btncliente.TabIndex = 3;
@@ -185,7 +205,7 @@
             this.btnventa.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnventa.Image = ((System.Drawing.Image)(resources.GetObject("btnventa.Image")));
             this.btnventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnventa.Location = new System.Drawing.Point(0, 201);
+            this.btnventa.Location = new System.Drawing.Point(0, 193);
             this.btnventa.Name = "btnventa";
             this.btnventa.Size = new System.Drawing.Size(250, 40);
             this.btnventa.TabIndex = 2;
@@ -310,5 +330,6 @@
         private System.Windows.Forms.Button btnventa;
         private System.Windows.Forms.Button btnreporte;
         private System.Windows.Forms.Button btnUsuario;
+        private System.Windows.Forms.Button btncerrarsesion;
     }
 }

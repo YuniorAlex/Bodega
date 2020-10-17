@@ -85,12 +85,13 @@ namespace CapaPresentacion.Forms
                         bienvenida.ShowDialog();
                         FormPrincipal principal = new FormPrincipal();
                         principal.ShowDialog();
+                        principal.FormClosed += CerrarSesion;
             //        }
             //        else
             //        {
             //            msgError("Usuario o Contraseña incorrecta.");
-            //            txtusuario.Clear();
-            //            txtcontraseña.Clear();
+            //            txtusuario.Focus();
+            //            txtcontraseña.Text="CONTRASEÑA";
             //        }
             //    }
             //    else
@@ -107,6 +108,15 @@ namespace CapaPresentacion.Forms
         private void FormInicioSesion_Load(object sender, EventArgs e)
         {
 
+        }
+        private void CerrarSesion(object sender, FormClosedEventArgs e)
+        {
+            txtusuario.Text="USUARIO";
+            txtcontraseña.Text="CONTRASEÑA";
+            txtcontraseña.UseSystemPasswordChar = false;
+            lblerror.Visible = false;
+            this.Show();
+            //txtusuario.Focus();
         }
     }
 }

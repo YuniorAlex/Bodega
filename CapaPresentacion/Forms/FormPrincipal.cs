@@ -47,7 +47,7 @@ namespace CapaPresentacion.Forms
 
         private void btncerrar_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("¿Esta seguro de cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if(MessageBox.Show("¿Esta seguro de cerrar aplicación?", "Cerrar Aplicación", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 //DISEÑO DE LA ALERTA
                 Application.Exit();
@@ -147,6 +147,12 @@ namespace CapaPresentacion.Forms
             FormReporte frm = new FormReporte();
             frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
             AbrirFormInPanel(frm);
+        }
+
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                this.Close();
         }
     }
 }
