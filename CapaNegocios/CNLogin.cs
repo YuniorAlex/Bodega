@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaNegocios.ValueObjects
+namespace CapaNegocios
 {
-    public enum EntityState
+    public class CNLogin
     {
-        Added,
-        Deleted,
-        Modified
     }
 }

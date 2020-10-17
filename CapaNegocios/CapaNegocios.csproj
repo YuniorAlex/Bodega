@@ -50,19 +50,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\busuarioModel.cs" />
+    <Compile Include="CNBase.cs" />
+    <Compile Include="CNLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValueObjects\EntityState.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaComun\CapaComun.csproj">
+      <Project>{ab3f4708-ea63-4050-a581-ee874f21d045}</Project>
+      <Name>CapaComun</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
       <Project>{46be8348-6eeb-48c3-9e40-3cdb51616e9a}</Project>
       <Name>CapaDatos</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
