@@ -391,9 +391,9 @@
             this.label1.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(215, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 26);
+            this.label1.Size = new System.Drawing.Size(102, 26);
             this.label1.TabIndex = 11;
-            this.label1.Text = "SISTEMA CONTADOR";
+            this.label1.Text = "SISTEMA";
             // 
             // horafecha
             // 

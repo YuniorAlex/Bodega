@@ -33,7 +33,7 @@ namespace CapaPresentacion.Forms
             /*}
             else
             {
-                MessageBox.Show("Debe seleccionar fila!");
+                MessageBox.Show("Debe seleccionar una fila!");
             }*/
         }
 

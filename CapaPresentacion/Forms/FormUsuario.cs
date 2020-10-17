@@ -22,5 +22,10 @@ namespace CapaPresentacion.Forms
             FormUsuarioAgregar frm = new FormUsuarioAgregar();
             frm.ShowDialog();
         }
+
+        private void FormUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
