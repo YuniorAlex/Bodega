@@ -40,6 +40,7 @@
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.btnacceder = new System.Windows.Forms.Button();
             this.linkcontraseña = new System.Windows.Forms.LinkLabel();
+            this.lblerror = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,7 +145,7 @@
             this.btnacceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
             this.btnacceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnacceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnacceder.Location = new System.Drawing.Point(399, 237);
+            this.btnacceder.Location = new System.Drawing.Point(399, 249);
             this.btnacceder.Name = "btnacceder";
             this.btnacceder.Size = new System.Drawing.Size(261, 40);
             this.btnacceder.TabIndex = 3;
@@ -159,12 +160,25 @@
             this.linkcontraseña.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
             this.linkcontraseña.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkcontraseña.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.linkcontraseña.Location = new System.Drawing.Point(451, 290);
+            this.linkcontraseña.Location = new System.Drawing.Point(451, 302);
             this.linkcontraseña.Name = "linkcontraseña";
             this.linkcontraseña.Size = new System.Drawing.Size(166, 17);
             this.linkcontraseña.TabIndex = 0;
             this.linkcontraseña.TabStop = true;
             this.linkcontraseña.Text = "¿Ha olvidado contraseña?";
+            // 
+            // lblerror
+            // 
+            this.lblerror.AutoSize = true;
+            this.lblerror.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblerror.Image = ((System.Drawing.Image)(resources.GetObject("lblerror.Image")));
+            this.lblerror.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblerror.Location = new System.Drawing.Point(400, 214);
+            this.lblerror.Name = "lblerror";
+            this.lblerror.Size = new System.Drawing.Size(98, 15);
+            this.lblerror.TabIndex = 13;
+            this.lblerror.Text = "Mensaje Error";
+            this.lblerror.Visible = false;
             // 
             // FormInicioSesion
             // 
@@ -173,6 +187,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.lblerror);
             this.Controls.Add(this.linkcontraseña);
             this.Controls.Add(this.btnacceder);
             this.Controls.Add(this.txtusuario);
@@ -189,6 +204,7 @@
             this.Name = "FormInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInicioSesion";
+            this.Load += new System.EventHandler(this.FormInicioSesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,5 +222,6 @@
         private System.Windows.Forms.Button btnacceder;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.LinkLabel linkcontraseña;
+        private System.Windows.Forms.Label lblerror;
     }
 }

@@ -62,13 +62,51 @@ namespace CapaPresentacion.Forms
             Application.Exit();
         }
 
+        //MENSAJE DE ERROR
+        private void msgError(string msg)
+        {
+            lblerror.Text = "    " + msg;
+            lblerror.Visible = true;
+        }
+
         private void btnacceder_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormBienvenida bienvenida = new FormBienvenida();
-            bienvenida.ShowDialog();
-            FormPrincipal principal = new FormPrincipal();
-            principal.ShowDialog();
+            //VALIDAMOS EL INICIO DE SESION CON LA BD
+            //if (txtusuario.Text != "USUARIO")
+            //{
+            //    if (txtcontraseña.Text != "CONTRASEÑA")
+            //    {
+            //        CEUUsuario user = new CEUUsuario();
+            //        var ValidarLogin = user.usuario(txtusuario.Text,txtcontraseña.Text);
+            //        if(ValidarLogin==true)
+            //        {
+                        this.Hide();
+                        FormBienvenida bienvenida = new FormBienvenida();
+                        bienvenida.ShowDialog();
+                        FormPrincipal principal = new FormPrincipal();
+                        principal.ShowDialog();
+            //        }
+            //        else
+            //        {
+            //            msgError("Usuario o Contraseña incorrecta.");
+            //            txtusuario.Clear();
+            //            txtcontraseña.Clear();
+            //        }
+            //    }
+            //    else
+            //    {
+            //        msgError("Porfavor ingrese su contraseña.");
+            //    }
+            //}
+            //else
+            //{
+            //    msgError("Porfavor ingrese su usuario.");
+            //}
+        }
+
+        private void FormInicioSesion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
