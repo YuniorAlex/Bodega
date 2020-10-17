@@ -348,6 +348,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Forms\Mantenimiento\" />
+    <Folder Include="Forms\Seguridad\" />
     <Folder Include="Helps\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
