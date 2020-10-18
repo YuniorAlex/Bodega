@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Forms
 {
-    public partial class FormUsuarioAgregar : Form
+    public partial class FormEmpleado : Form
     {
-        public FormUsuarioAgregar()
+        public FormEmpleado()
         {
             InitializeComponent();
         }
@@ -25,6 +25,11 @@ namespace CapaPresentacion.Forms
         private void btncancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormEmpleado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

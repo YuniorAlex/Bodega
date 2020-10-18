@@ -198,10 +198,10 @@
     <Compile Include="Forms\FormInicio.Designer.cs">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Seguridad\FormInicioSesion.cs">
+    <Compile Include="Forms\FormInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Seguridad\FormInicioSesion.Designer.cs">
+    <Compile Include="Forms\FormInicioSesion.Designer.cs">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Mantenimiento\FormProducto.cs">
@@ -246,17 +246,23 @@
     <Compile Include="Forms\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mantenimiento\FormUsuarioAgregar.cs">
+    <Compile Include="Forms\Mantenimiento\FormEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mantenimiento\FormUsuarioAgregar.Designer.cs">
-      <DependentUpon>FormUsuarioAgregar.cs</DependentUpon>
+    <Compile Include="Forms\Mantenimiento\FormEmpleado.Designer.cs">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Mantenimiento\FormVenta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Mantenimiento\FormVenta.Designer.cs">
       <DependentUpon>FormVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FormEditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FormEditarUsuario.Designer.cs">
+      <DependentUpon>FormEditarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -284,7 +290,7 @@
     <EmbeddedResource Include="Forms\FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Seguridad\FormInicioSesion.resx">
+    <EmbeddedResource Include="Forms\FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormProducto.resx">
@@ -308,11 +314,14 @@
     <EmbeddedResource Include="Forms\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mantenimiento\FormUsuarioAgregar.resx">
-      <DependentUpon>FormUsuarioAgregar.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Mantenimiento\FormEmpleado.resx">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormVenta.resx">
       <DependentUpon>FormVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seguridad\FormEditarUsuario.resx">
+      <DependentUpon>FormEditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -338,6 +347,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaComun\CapaComun.csproj">
+      <Project>{ab3f4708-ea63-4050-a581-ee874f21d045}</Project>
+      <Name>CapaComun</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
       <Project>{46BE8348-6EEB-48C3-9E40-3CDB51616E9A}</Project>
       <Name>CapaDatos</Name>

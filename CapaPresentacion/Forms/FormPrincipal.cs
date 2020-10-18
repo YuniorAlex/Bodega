@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentacion.Forms.Seguridad;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,42 @@ namespace CapaPresentacion.Forms
 {
     public partial class FormPrincipal : Form
     {
-        
+
         public FormPrincipal()
         {
             InitializeComponent();
+            PersonalizarDiseño();
         }
+        #region MENU-DESPLEGABLE
+        private void PersonalizarDiseño()
+        {
+            panelventasubmenudesplegable.Visible = false;
+            panelcomprasmenudesplegable.Visible = false;
+            panelaccesossubmenudesplegable.Visible = false;
+            //..
+        }
+        private void OcultarSubMenu()
+        {
+            if (panelventasubmenudesplegable.Visible == true)
+                panelventasubmenudesplegable.Visible = false;
+            if (panelcomprasmenudesplegable.Visible == true)
+                panelcomprasmenudesplegable.Visible = false;
+            if (panelaccesossubmenudesplegable.Visible == true)
+                panelaccesossubmenudesplegable.Visible = false;
+        }
+        private void MostarSubMenu(Panel subMenu)
+        {
+            if(subMenu.Visible==false)
+            {
+                OcultarSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+        #endregion
         public class Formulario : FormUsuario
         {
 
@@ -74,12 +106,7 @@ namespace CapaPresentacion.Forms
             fh.Show();
             
         }
-        private void btnproducto_Click(object sender, EventArgs e)
-        {
-            FormProducto frm = new FormProducto();
-            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
-            AbrirFormInPanel(frm);
-        }
+        
         private void mostrarInicio()
         {
             AbrirFormInPanel(new FormInicio());
@@ -94,11 +121,29 @@ namespace CapaPresentacion.Forms
             mostrarInicio();
         }
 
-        private void btnventa_Click(object sender, EventArgs e)
+        private void MenuVertical_Paint(object sender, PaintEventArgs e)
         {
-            FormVenta frm = new FormVenta();
-            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
-            AbrirFormInPanel(frm);
+
+        }
+
+
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                this.Close();
+        }
+        #region MENU-DESPLEGABLE
+        private void btnproducto_Click(object sender, EventArgs e)
+        {
+                FormProducto frm = new FormProducto();
+                frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+                AbrirFormInPanel(frm);
+            
+        }
+
+        private void buttonventadesplegable_Click(object sender, EventArgs e)
+        {
+            MostarSubMenu(panelventasubmenudesplegable);
         }
 
         private void btncliente_Click(object sender, EventArgs e)
@@ -106,6 +151,15 @@ namespace CapaPresentacion.Forms
             FormCliente frm = new FormCliente();
             frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
             AbrirFormInPanel(frm);
+            OcultarSubMenu();
+        }
+
+        private void btnventa_Click(object sender, EventArgs e)
+        {
+            FormVenta frm = new FormVenta();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+            OcultarSubMenu();
         }
 
         private void btnproveedor_Click(object sender, EventArgs e)
@@ -113,6 +167,7 @@ namespace CapaPresentacion.Forms
             FormProveedor frm = new FormProveedor();
             frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
             AbrirFormInPanel(frm);
+            OcultarSubMenu();
         }
 
         private void btncompra_Click(object sender, EventArgs e)
@@ -120,18 +175,7 @@ namespace CapaPresentacion.Forms
             FormCompra frm = new FormCompra();
             frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
             AbrirFormInPanel(frm);
-        }
-
-        private void btnempleado_Click(object sender, EventArgs e)
-        {
-            FormGrafico frm = new FormGrafico();
-            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
-            AbrirFormInPanel(frm);
-        }
-
-        private void MenuVertical_Paint(object sender, PaintEventArgs e)
-        {
-
+            OcultarSubMenu();
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
@@ -139,7 +183,7 @@ namespace CapaPresentacion.Forms
             FormUsuario frm = new FormUsuario();
             frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
             AbrirFormInPanel(frm);
-        
+            OcultarSubMenu();
         }
 
         private void btnreporte_Click(object sender, EventArgs e)
@@ -149,10 +193,35 @@ namespace CapaPresentacion.Forms
             AbrirFormInPanel(frm);
         }
 
-        private void btncerrarsesion_Click(object sender, EventArgs e)
+        private void btngrafico_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Esta seguro de cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                this.Close();
+            FormGrafico frm = new FormGrafico();
+            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
+            AbrirFormInPanel(frm);
+        }
+
+        private void btncompradesplegable_Click(object sender, EventArgs e)
+        {
+            MostarSubMenu(panelcomprasmenudesplegable);
+        }
+
+        private void buttonaccesodesplegable_Click(object sender, EventArgs e)
+        {
+            MostarSubMenu(panelaccesossubmenudesplegable);
+        }
+
+        private void btnempleados_Click(object sender, EventArgs e)
+        {
+            FormEmpleado frm = new FormEmpleado();
+            frm.ShowDialog();
+            OcultarSubMenu();
+        }
+        #endregion
+
+        private void linkLabelmiperfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormEditarUsuario frm = new FormEditarUsuario();
+            frm.ShowDialog();
         }
     }
 }

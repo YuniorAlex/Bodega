@@ -19,8 +19,7 @@ namespace CapaPresentacion.Forms
 
         private void btnimprimir_Click(object sender, EventArgs e)
         {
-            FormUsuarioAgregar frm = new FormUsuarioAgregar();
-            frm.ShowDialog();
+            
         }
 
         private void FormUsuario_Load(object sender, EventArgs e)

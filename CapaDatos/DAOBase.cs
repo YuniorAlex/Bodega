@@ -25,7 +25,10 @@ namespace CapaDatos
         {
 
             _connection = new SqlConnection();
-            _connection.ConnectionString = "Data Source= DESKTOP\\SQLDESKTOP; Initial Catalog = IMM; User ID = sa; Password =123321";
+            //_connection.ConnectionString = "Data Source= DESKTOP\\SQLDESKTOP; Initial Catalog = IMM; User ID = sa; Password =123321";
+
+            //CONEXION RONY XD
+            _connection.ConnectionString = "Server=JRONY;Database=BodegaBD; User Id=sa; Password=123;";
 
             return _connection;
         }

@@ -12,7 +12,7 @@ namespace CapaEntidades
         //public string Pass_Usuario { get; set; }
         //public byte[] Hash_Pass_Usu { get; set; }
         //public string Nombre_Completo { get; set; }
-
+         
            public string idusuario{get; set;}
            public string usuario  {get; set;}
            public string password {get; set;}
