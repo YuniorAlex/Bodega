@@ -150,6 +150,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Filtro\FormBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filtro\FormBuscarCliente.Designer.cs">
+      <DependentUpon>FormBuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Filtro\FormBuscarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filtro\FormBuscarEmpleado.Designer.cs">
+      <DependentUpon>FormBuscarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Filtro\FormBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filtro\FormBuscarProducto.Designer.cs">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Filtro\FormBuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filtro\FormBuscarProveedor.Designer.cs">
+      <DependentUpon>FormBuscarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Mantenimiento\FormReporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -266,6 +290,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Filtro\FormBuscarCliente.resx">
+      <DependentUpon>FormBuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Filtro\FormBuscarEmpleado.resx">
+      <DependentUpon>FormBuscarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Filtro\FormBuscarProducto.resx">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Filtro\FormBuscarProveedor.resx">
+      <DependentUpon>FormBuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormReporte.resx">
       <DependentUpon>FormReporte.cs</DependentUpon>
     </EmbeddedResource>

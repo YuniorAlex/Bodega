@@ -51,7 +51,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnbuscarproducto = new System.Windows.Forms.PictureBox();
-            this.btnbuscarcliente = new System.Windows.Forms.PictureBox();
+            this.btnbuscarproveedor = new System.Windows.Forms.PictureBox();
             this.btneliminar = new System.Windows.Forms.Button();
             this.btnborrar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
@@ -80,7 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnbuscarproducto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnbuscarcliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnbuscarproveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -325,18 +325,20 @@
             this.btnbuscarproducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnbuscarproducto.TabIndex = 92;
             this.btnbuscarproducto.TabStop = false;
+            this.btnbuscarproducto.Click += new System.EventHandler(this.btnbuscarproducto_Click);
             // 
-            // btnbuscarcliente
+            // btnbuscarproveedor
             // 
-            this.btnbuscarcliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnbuscarcliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbuscarcliente.Image = ((System.Drawing.Image)(resources.GetObject("btnbuscarcliente.Image")));
-            this.btnbuscarcliente.Location = new System.Drawing.Point(344, 93);
-            this.btnbuscarcliente.Name = "btnbuscarcliente";
-            this.btnbuscarcliente.Size = new System.Drawing.Size(24, 24);
-            this.btnbuscarcliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnbuscarcliente.TabIndex = 91;
-            this.btnbuscarcliente.TabStop = false;
+            this.btnbuscarproveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnbuscarproveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscarproveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnbuscarproveedor.Image")));
+            this.btnbuscarproveedor.Location = new System.Drawing.Point(344, 93);
+            this.btnbuscarproveedor.Name = "btnbuscarproveedor";
+            this.btnbuscarproveedor.Size = new System.Drawing.Size(24, 24);
+            this.btnbuscarproveedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnbuscarproveedor.TabIndex = 91;
+            this.btnbuscarproveedor.TabStop = false;
+            this.btnbuscarproveedor.Click += new System.EventHandler(this.btnbuscarproveedor_Click);
             // 
             // btneliminar
             // 
@@ -690,7 +692,7 @@
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.btnbuscarproducto);
-            this.Controls.Add(this.btnbuscarcliente);
+            this.Controls.Add(this.btnbuscarproveedor);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox6);
@@ -719,7 +721,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnbuscarproducto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnbuscarcliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnbuscarproveedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -751,7 +753,7 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox btnbuscarproducto;
-        private System.Windows.Forms.PictureBox btnbuscarcliente;
+        private System.Windows.Forms.PictureBox btnbuscarproveedor;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.Button btnborrar;
         private System.Windows.Forms.Button btncancelar;

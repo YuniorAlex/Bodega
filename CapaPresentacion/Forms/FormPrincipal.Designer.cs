@@ -46,6 +46,7 @@
             this.buttonventadesplegable = new System.Windows.Forms.Button();
             this.btnproducto = new System.Windows.Forms.Button();
             this.panelinfo = new System.Windows.Forms.Panel();
+            this.linkLabelmiperfil = new System.Windows.Forms.LinkLabel();
             this.lblcorreo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblnombreapellido = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnmenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.linkLabelmiperfil = new System.Windows.Forms.LinkLabel();
             this.MenuVertical.SuspendLayout();
             this.panelaccesossubmenudesplegable.SuspendLayout();
             this.panelcomprasmenudesplegable.SuspendLayout();
@@ -370,11 +370,23 @@
             this.panelinfo.Size = new System.Drawing.Size(250, 200);
             this.panelinfo.TabIndex = 11;
             // 
+            // linkLabelmiperfil
+            // 
+            this.linkLabelmiperfil.AutoSize = true;
+            this.linkLabelmiperfil.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
+            this.linkLabelmiperfil.Location = new System.Drawing.Point(13, 73);
+            this.linkLabelmiperfil.Name = "linkLabelmiperfil";
+            this.linkLabelmiperfil.Size = new System.Drawing.Size(44, 13);
+            this.linkLabelmiperfil.TabIndex = 14;
+            this.linkLabelmiperfil.TabStop = true;
+            this.linkLabelmiperfil.Text = "Mi Perfil";
+            this.linkLabelmiperfil.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelmiperfil_LinkClicked);
+            // 
             // lblcorreo
             // 
             this.lblcorreo.AutoSize = true;
             this.lblcorreo.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcorreo.Location = new System.Drawing.Point(79, 57);
+            this.lblcorreo.Location = new System.Drawing.Point(78, 51);
             this.lblcorreo.Name = "lblcorreo";
             this.lblcorreo.Size = new System.Drawing.Size(43, 13);
             this.lblcorreo.TabIndex = 2;
@@ -383,7 +395,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -394,7 +406,7 @@
             // 
             this.lblnombreapellido.AutoSize = true;
             this.lblnombreapellido.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombreapellido.Location = new System.Drawing.Point(79, 38);
+            this.lblnombreapellido.Location = new System.Drawing.Point(78, 32);
             this.lblnombreapellido.Name = "lblnombreapellido";
             this.lblnombreapellido.Size = new System.Drawing.Size(115, 13);
             this.lblnombreapellido.TabIndex = 1;
@@ -404,7 +416,7 @@
             // 
             this.lblCargo.AutoSize = true;
             this.lblCargo.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.Location = new System.Drawing.Point(79, 19);
+            this.lblCargo.Location = new System.Drawing.Point(78, 13);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(37, 13);
             this.lblCargo.TabIndex = 0;
@@ -486,18 +498,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1050, 600);
             this.panelContenedor.TabIndex = 2;
-            // 
-            // linkLabelmiperfil
-            // 
-            this.linkLabelmiperfil.AutoSize = true;
-            this.linkLabelmiperfil.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
-            this.linkLabelmiperfil.Location = new System.Drawing.Point(22, 79);
-            this.linkLabelmiperfil.Name = "linkLabelmiperfil";
-            this.linkLabelmiperfil.Size = new System.Drawing.Size(44, 13);
-            this.linkLabelmiperfil.TabIndex = 14;
-            this.linkLabelmiperfil.TabStop = true;
-            this.linkLabelmiperfil.Text = "Mi Perfil";
-            this.linkLabelmiperfil.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelmiperfil_LinkClicked);
             // 
             // FormPrincipal
             // 

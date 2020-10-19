@@ -604,6 +604,7 @@
             this.btnbuscarcliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.btnbuscarcliente.TabIndex = 82;
             this.btnbuscarcliente.TabStop = false;
+            this.btnbuscarcliente.Click += new System.EventHandler(this.btnbuscarcliente_Click);
             // 
             // btnbuscarproducto
             // 
@@ -616,6 +617,7 @@
             this.btnbuscarproducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.btnbuscarproducto.TabIndex = 83;
             this.btnbuscarproducto.TabStop = false;
+            this.btnbuscarproducto.Click += new System.EventHandler(this.btnbuscarproducto_Click);
             // 
             // FormVenta
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentacion.Forms.Filtro;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,12 @@ namespace CapaPresentacion.Forms
         private void FormUsuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnbuscarempleado_Click(object sender, EventArgs e)
+        {
+            FormBuscarEmpleado frm = new FormBuscarEmpleado();
+            frm.ShowDialog();
         }
     }
 }

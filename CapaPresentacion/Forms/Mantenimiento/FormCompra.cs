@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentacion.Forms.Filtro;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,18 @@ namespace CapaPresentacion.Forms
         private void FormCompra_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnbuscarproveedor_Click(object sender, EventArgs e)
+        {
+            FormBuscarProveedor frm = new FormBuscarProveedor();
+            frm.ShowDialog();
+        }
+
+        private void btnbuscarproducto_Click(object sender, EventArgs e)
+        {
+            FormBuscarProducto frm = new FormBuscarProducto();
+            frm.ShowDialog();
         }
     }
 }

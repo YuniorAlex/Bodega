@@ -49,10 +49,10 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnbuscarempleado = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnbuscarempleado)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -209,11 +209,11 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(56, 118);
+            this.label4.Location = new System.Drawing.Point(48, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 18);
+            this.label4.Size = new System.Drawing.Size(120, 18);
             this.label4.TabIndex = 68;
-            this.label4.Text = "Dni Persona :";
+            this.label4.Text = "Dni Empleado :";
             // 
             // label5
             // 
@@ -295,23 +295,24 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(32, 146);
+            this.label7.Location = new System.Drawing.Point(96, 146);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 18);
+            this.label7.Size = new System.Drawing.Size(72, 18);
             this.label7.TabIndex = 77;
-            this.label7.Text = "Nombre Persona :";
+            this.label7.Text = "Nombre :";
             // 
-            // pictureBox2
+            // btnbuscarempleado
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(385, 115);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 78;
-            this.pictureBox2.TabStop = false;
+            this.btnbuscarempleado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnbuscarempleado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscarempleado.Image = ((System.Drawing.Image)(resources.GetObject("btnbuscarempleado.Image")));
+            this.btnbuscarempleado.Location = new System.Drawing.Point(385, 115);
+            this.btnbuscarempleado.Name = "btnbuscarempleado";
+            this.btnbuscarempleado.Size = new System.Drawing.Size(24, 24);
+            this.btnbuscarempleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnbuscarempleado.TabIndex = 78;
+            this.btnbuscarempleado.TabStop = false;
+            this.btnbuscarempleado.Click += new System.EventHandler(this.btnbuscarempleado_Click);
             // 
             // FormUsuario
             // 
@@ -319,7 +320,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(233)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1050, 600);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnbuscarempleado);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.comboBox2);
@@ -346,7 +347,7 @@
             this.Load += new System.EventHandler(this.FormUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnbuscarempleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,6 +375,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btnbuscarempleado;
     }
 }
