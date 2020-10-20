@@ -1,4 +1,5 @@
-﻿using CapaPresentacion.Forms.Seguridad;
+﻿using CapaPresentacion.Forms.Mantenimiento;
+using CapaPresentacion.Forms.Seguridad;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,7 @@ namespace CapaPresentacion.Forms
             panelventasubmenudesplegable.Visible = false;
             panelcomprasmenudesplegable.Visible = false;
             panelaccesossubmenudesplegable.Visible = false;
+            panelconfiguracionmenudeplegable.Visible = false;
             //..
         }
         private void OcultarSubMenu()
@@ -35,6 +37,8 @@ namespace CapaPresentacion.Forms
                 panelcomprasmenudesplegable.Visible = false;
             if (panelaccesossubmenudesplegable.Visible == true)
                 panelaccesossubmenudesplegable.Visible = false;
+            if (panelconfiguracionmenudeplegable.Visible == true)
+                panelconfiguracionmenudeplegable.Visible = false;
         }
         private void MostarSubMenu(Panel subMenu)
         {
@@ -209,19 +213,38 @@ namespace CapaPresentacion.Forms
         {
             MostarSubMenu(panelaccesossubmenudesplegable);
         }
-
-        private void btnempleados_Click(object sender, EventArgs e)
+        
+        private void linkLabelmiperfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormEmpleado frm = new FormEmpleado();
+            FormEditarUsuario frm = new FormEditarUsuario();
+            frm.ShowDialog();
+        }
+
+        private void btnconfiguracion_Click(object sender, EventArgs e)
+        {
+            MostarSubMenu(panelconfiguracionmenudeplegable);
+        }
+
+        private void btnpventa_Click(object sender, EventArgs e)
+        {
+            FormPuntoVenta frm = new FormPuntoVenta();
+            frm.ShowDialog();
+            OcultarSubMenu();
+        }
+
+        private void btnalmacen_Click(object sender, EventArgs e)
+        {
+            FormAlmacen frm = new FormAlmacen();
             frm.ShowDialog();
             OcultarSubMenu();
         }
         #endregion
 
-        private void linkLabelmiperfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btntalonario_Click(object sender, EventArgs e)
         {
-            FormEditarUsuario frm = new FormEditarUsuario();
+            FormTalonario frm = new FormTalonario();
             frm.ShowDialog();
+            OcultarSubMenu();
         }
     }
 }

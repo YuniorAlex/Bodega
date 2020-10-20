@@ -174,11 +174,29 @@
     <Compile Include="Forms\Filtro\FormBuscarProveedor.Designer.cs">
       <DependentUpon>FormBuscarProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Mantenimiento\FormAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\FormAlmacen.Designer.cs">
+      <DependentUpon>FormAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\FormPuntoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\FormPuntoVenta.Designer.cs">
+      <DependentUpon>FormPuntoVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Mantenimiento\FormReporte.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Mantenimiento\FormReporte.Designer.cs">
       <DependentUpon>FormReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\FormTalonario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\FormTalonario.Designer.cs">
+      <DependentUpon>FormTalonario.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Mantenimiento\FormUsuario.cs">
       <SubType>Form</SubType>
@@ -302,8 +320,17 @@
     <EmbeddedResource Include="Forms\Filtro\FormBuscarProveedor.resx">
       <DependentUpon>FormBuscarProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mantenimiento\FormAlmacen.resx">
+      <DependentUpon>FormAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mantenimiento\FormPuntoVenta.resx">
+      <DependentUpon>FormPuntoVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormReporte.resx">
       <DependentUpon>FormReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mantenimiento\FormTalonario.resx">
+      <DependentUpon>FormTalonario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
