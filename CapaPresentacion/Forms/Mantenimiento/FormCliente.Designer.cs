@@ -34,11 +34,18 @@
             this.btnexportar = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnnuevo = new System.Windows.Forms.Button();
+            this.btnguardar = new System.Windows.Forms.Button();
             this.dataGridViewCliente = new System.Windows.Forms.DataGridView();
+            this.idcliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipodocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrodocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnimprimir = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,15 +53,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtdireccion = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txtapellidos = new System.Windows.Forms.TextBox();
+            this.txtnombres = new System.Windows.Forms.TextBox();
+            this.txtcodcliente = new System.Windows.Forms.TextBox();
+            this.txtnrodocumento = new System.Windows.Forms.TextBox();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
             this.txttproveedor = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBoxtipodocumento = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -98,7 +107,7 @@
             this.btnexportar.Location = new System.Drawing.Point(662, 558);
             this.btnexportar.Name = "btnexportar";
             this.btnexportar.Size = new System.Drawing.Size(200, 30);
-            this.btnexportar.TabIndex = 29;
+            this.btnexportar.TabIndex = 12;
             this.btnexportar.Text = "Exportar";
             this.btnexportar.UseVisualStyleBackColor = false;
             // 
@@ -116,7 +125,7 @@
             this.btneditar.Location = new System.Drawing.Point(170, 558);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(200, 30);
-            this.btneditar.TabIndex = 28;
+            this.btneditar.TabIndex = 10;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
@@ -135,42 +144,91 @@
             this.button2.Location = new System.Drawing.Point(416, 558);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 30);
-            this.button2.TabIndex = 27;
+            this.button2.TabIndex = 11;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // btnnuevo
+            // btnguardar
             // 
-            this.btnnuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnnuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
-            this.btnnuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnnuevo.FlatAppearance.BorderSize = 0;
-            this.btnnuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.btnnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnnuevo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnnuevo.Image")));
-            this.btnnuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnuevo.Location = new System.Drawing.Point(792, 114);
-            this.btnnuevo.Name = "btnnuevo";
-            this.btnnuevo.Size = new System.Drawing.Size(200, 30);
-            this.btnnuevo.TabIndex = 26;
-            this.btnnuevo.Text = "Guardar";
-            this.btnnuevo.UseVisualStyleBackColor = false;
+            this.btnguardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
+            this.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnguardar.FlatAppearance.BorderSize = 0;
+            this.btnguardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnguardar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardar.Image = ((System.Drawing.Image)(resources.GetObject("btnguardar.Image")));
+            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnguardar.Location = new System.Drawing.Point(792, 114);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(200, 30);
+            this.btnguardar.TabIndex = 9;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = false;
             // 
             // dataGridViewCliente
             // 
             this.dataGridViewCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCliente.Location = new System.Drawing.Point(27, 229);
+            this.dataGridViewCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idcliente,
+            this.nombre,
+            this.apellido,
+            this.tipodocumento,
+            this.nrodocumento,
+            this.telefono,
+            this.direccion,
+            this.correo});
+            this.dataGridViewCliente.Location = new System.Drawing.Point(27, 278);
             this.dataGridViewCliente.Name = "dataGridViewCliente";
-            this.dataGridViewCliente.Size = new System.Drawing.Size(1000, 310);
+            this.dataGridViewCliente.Size = new System.Drawing.Size(1000, 261);
             this.dataGridViewCliente.TabIndex = 30;
+            // 
+            // idcliente
+            // 
+            this.idcliente.HeaderText = "Codigo";
+            this.idcliente.Name = "idcliente";
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombres";
+            this.nombre.Name = "nombre";
+            // 
+            // apellido
+            // 
+            this.apellido.HeaderText = "Apellidos";
+            this.apellido.Name = "apellido";
+            // 
+            // tipodocumento
+            // 
+            this.tipodocumento.HeaderText = "Tipo de Documento";
+            this.tipodocumento.Name = "tipodocumento";
+            // 
+            // nrodocumento
+            // 
+            this.nrodocumento.HeaderText = "Numero de Documento";
+            this.nrodocumento.Name = "nrodocumento";
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "Direccion";
+            this.direccion.Name = "direccion";
+            // 
+            // correo
+            // 
+            this.correo.HeaderText = "Correo";
+            this.correo.Name = "correo";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 185);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 232);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,36 +240,18 @@
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
             this.textBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(68, 193);
+            this.textBox1.Location = new System.Drawing.Point(68, 240);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(935, 25);
             this.textBox1.TabIndex = 31;
             this.textBox1.Text = "Buscar...";
-            // 
-            // btnimprimir
-            // 
-            this.btnimprimir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnimprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
-            this.btnimprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnimprimir.FlatAppearance.BorderSize = 0;
-            this.btnimprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.btnimprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnimprimir.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnimprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnimprimir.Image")));
-            this.btnimprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnimprimir.Location = new System.Drawing.Point(792, 150);
-            this.btnimprimir.Name = "btnimprimir";
-            this.btnimprimir.Size = new System.Drawing.Size(200, 30);
-            this.btnimprimir.TabIndex = 41;
-            this.btnimprimir.Text = "Imprimir";
-            this.btnimprimir.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(45, 156);
+            this.label6.Location = new System.Drawing.Point(43, 203);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 18);
             this.label6.TabIndex = 46;
@@ -222,7 +262,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(53, 129);
+            this.label5.Location = new System.Drawing.Point(51, 172);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 18);
             this.label5.TabIndex = 45;
@@ -233,7 +273,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 102);
+            this.label4.Location = new System.Drawing.Point(59, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 18);
             this.label4.TabIndex = 44;
@@ -244,7 +284,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 75);
+            this.label3.Location = new System.Drawing.Point(43, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 18);
             this.label3.TabIndex = 43;
@@ -255,7 +295,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 48);
+            this.label1.Location = new System.Drawing.Point(27, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 18);
             this.label1.TabIndex = 42;
@@ -266,7 +306,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(353, 49);
+            this.label8.Location = new System.Drawing.Point(357, 141);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 18);
             this.label8.TabIndex = 48;
@@ -277,82 +317,82 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(402, 129);
+            this.label7.Location = new System.Drawing.Point(413, 172);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 18);
             this.label7.TabIndex = 49;
             this.label7.Text = "Correo :";
             // 
-            // textBox6
+            // txtdireccion
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox6.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(142, 154);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 23);
-            this.textBox6.TabIndex = 54;
+            this.txtdireccion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtdireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txtdireccion.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdireccion.Location = new System.Drawing.Point(141, 201);
+            this.txtdireccion.Name = "txtdireccion";
+            this.txtdireccion.Size = new System.Drawing.Size(200, 23);
+            this.txtdireccion.TabIndex = 8;
             // 
-            // textBox5
+            // txttelefono
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox5.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(142, 127);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 23);
-            this.textBox5.TabIndex = 53;
+            this.txttelefono.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txttelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txttelefono.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttelefono.Location = new System.Drawing.Point(141, 170);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(200, 23);
+            this.txttelefono.TabIndex = 6;
             // 
-            // textBox4
+            // txtapellidos
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox4.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(142, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(545, 23);
-            this.textBox4.TabIndex = 52;
+            this.txtapellidos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtapellidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txtapellidos.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtapellidos.Location = new System.Drawing.Point(141, 108);
+            this.txtapellidos.Name = "txtapellidos";
+            this.txtapellidos.Size = new System.Drawing.Size(545, 23);
+            this.txtapellidos.TabIndex = 3;
             // 
-            // textBox3
+            // txtnombres
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(142, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(545, 23);
-            this.textBox3.TabIndex = 51;
+            this.txtnombres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtnombres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txtnombres.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombres.Location = new System.Drawing.Point(141, 77);
+            this.txtnombres.Name = "txtnombres";
+            this.txtnombres.Size = new System.Drawing.Size(545, 23);
+            this.txtnombres.TabIndex = 2;
             // 
-            // textBox2
+            // txtcodcliente
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(142, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 23);
-            this.textBox2.TabIndex = 50;
+            this.txtcodcliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtcodcliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txtcodcliente.Enabled = false;
+            this.txtcodcliente.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodcliente.Location = new System.Drawing.Point(141, 46);
+            this.txtcodcliente.Name = "txtcodcliente";
+            this.txtcodcliente.Size = new System.Drawing.Size(200, 23);
+            this.txtcodcliente.TabIndex = 1;
             // 
-            // textBox7
+            // txtnrodocumento
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox7.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(487, 47);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(200, 23);
-            this.textBox7.TabIndex = 55;
+            this.txtnrodocumento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtnrodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txtnrodocumento.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnrodocumento.Location = new System.Drawing.Point(487, 139);
+            this.txtnrodocumento.Name = "txtnrodocumento";
+            this.txtnrodocumento.Size = new System.Drawing.Size(200, 23);
+            this.txtnrodocumento.TabIndex = 5;
             // 
-            // textBox8
+            // txtcorreo
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox8.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(487, 127);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(200, 23);
-            this.textBox8.TabIndex = 56;
+            this.txtcorreo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtcorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txtcorreo.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcorreo.Location = new System.Drawing.Point(487, 170);
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(200, 23);
+            this.txtcorreo.TabIndex = 7;
             // 
             // txttproveedor
             // 
@@ -378,21 +418,45 @@
             this.label9.TabIndex = 57;
             this.label9.Text = "Total de Clientes";
             // 
+            // comboBoxtipodocumento
+            // 
+            this.comboBoxtipodocumento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxtipodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.comboBoxtipodocumento.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxtipodocumento.FormattingEnabled = true;
+            this.comboBoxtipodocumento.Location = new System.Drawing.Point(141, 139);
+            this.comboBoxtipodocumento.Name = "comboBoxtipodocumento";
+            this.comboBoxtipodocumento.Size = new System.Drawing.Size(200, 23);
+            this.comboBoxtipodocumento.TabIndex = 4;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(3, 141);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(136, 18);
+            this.label10.TabIndex = 76;
+            this.label10.Text = "Tipo Documento :";
+            // 
             // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(233)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.comboBoxtipodocumento);
             this.Controls.Add(this.txttproveedor);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtcorreo);
+            this.Controls.Add(this.txtnrodocumento);
+            this.Controls.Add(this.txtdireccion);
+            this.Controls.Add(this.txttelefono);
+            this.Controls.Add(this.txtapellidos);
+            this.Controls.Add(this.txtnombres);
+            this.Controls.Add(this.txtcodcliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
@@ -400,14 +464,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridViewCliente);
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnnuevo);
+            this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btncerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -428,11 +491,10 @@
         private System.Windows.Forms.Button btnexportar;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnnuevo;
+        private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.DataGridView dataGridViewCliente;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnimprimir;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -440,14 +502,24 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtdireccion;
+        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txtapellidos;
+        private System.Windows.Forms.TextBox txtnombres;
+        private System.Windows.Forms.TextBox txtcodcliente;
+        private System.Windows.Forms.TextBox txtnrodocumento;
+        private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.TextBox txttproveedor;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBoxtipodocumento;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipodocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nrodocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo;
     }
 }

@@ -35,7 +35,6 @@
             this.btncancelar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@
             this.txtprecio = new System.Windows.Forms.TextBox();
             this.txtudm = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtfecha = new System.Windows.Forms.DateTimePicker();
             this.radioButtonsi = new System.Windows.Forms.RadioButton();
             this.radioButtonno = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
@@ -133,21 +131,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 355);
+            this.label2.Location = new System.Drawing.Point(86, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 18);
             this.label2.TabIndex = 8;
             this.label2.Text = "Stock :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(86, 315);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 18);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Fecha :";
             // 
             // label4
             // 
@@ -254,23 +242,12 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // txtfecha
-            // 
-            this.txtfecha.CalendarFont = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfecha.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtfecha.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtfecha.Location = new System.Drawing.Point(156, 313);
-            this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(221, 23);
-            this.txtfecha.TabIndex = 6;
-            // 
             // radioButtonsi
             // 
             this.radioButtonsi.AutoSize = true;
             this.radioButtonsi.Checked = true;
             this.radioButtonsi.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonsi.Location = new System.Drawing.Point(197, 355);
+            this.radioButtonsi.Location = new System.Drawing.Point(197, 310);
             this.radioButtonsi.Name = "radioButtonsi";
             this.radioButtonsi.Size = new System.Drawing.Size(39, 19);
             this.radioButtonsi.TabIndex = 7;
@@ -282,7 +259,7 @@
             // 
             this.radioButtonno.AutoSize = true;
             this.radioButtonno.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonno.Location = new System.Drawing.Point(283, 355);
+            this.radioButtonno.Location = new System.Drawing.Point(283, 310);
             this.radioButtonno.Name = "radioButtonno";
             this.radioButtonno.Size = new System.Drawing.Size(39, 19);
             this.radioButtonno.TabIndex = 8;
@@ -297,7 +274,6 @@
             this.ClientSize = new System.Drawing.Size(600, 500);
             this.Controls.Add(this.radioButtonno);
             this.Controls.Add(this.radioButtonsi);
-            this.Controls.Add(this.txtfecha);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtudm);
             this.Controls.Add(this.txtprecio);
@@ -309,7 +285,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.button1);
@@ -334,7 +309,6 @@
         private System.Windows.Forms.Label btncerrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -346,7 +320,6 @@
         private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.TextBox txtudm;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker txtfecha;
         private System.Windows.Forms.RadioButton radioButtonsi;
         private System.Windows.Forms.RadioButton radioButtonno;
     }

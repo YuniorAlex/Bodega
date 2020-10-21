@@ -168,9 +168,8 @@ namespace CapaPresentacion.Forms
 
         private void btnproveedor_Click(object sender, EventArgs e)
         {
-            FormProveedor frm = new FormProveedor();
-            frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
-            AbrirFormInPanel(frm);
+            FormProveedorAgregar frm = new FormProveedorAgregar();
+            frm.ShowDialog();
             OcultarSubMenu();
         }
 
@@ -238,7 +237,7 @@ namespace CapaPresentacion.Forms
             frm.ShowDialog();
             OcultarSubMenu();
         }
-        #endregion
+        
 
         private void btntalonario_Click(object sender, EventArgs e)
         {
@@ -246,5 +245,13 @@ namespace CapaPresentacion.Forms
             frm.ShowDialog();
             OcultarSubMenu();
         }
+
+        private void btntipodocumento_Click(object sender, EventArgs e)
+        {
+            FormTipoDocumento frm = new FormTipoDocumento();
+            frm.ShowDialog();
+            OcultarSubMenu();
+        }
+        #endregion
     }
 }

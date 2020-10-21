@@ -198,6 +198,12 @@
     <Compile Include="Forms\Mantenimiento\FormTalonario.Designer.cs">
       <DependentUpon>FormTalonario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Mantenimiento\FormTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\FormTipoDocumento.Designer.cs">
+      <DependentUpon>FormTipoDocumento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Mantenimiento\FormUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,12 +270,6 @@
     <Compile Include="Forms\Mantenimiento\FormProductoEditar.Designer.cs">
       <DependentUpon>FormProductoEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mantenimiento\FormProveedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Mantenimiento\FormProveedor.Designer.cs">
-      <DependentUpon>FormProveedor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Mantenimiento\FormProveedorAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +332,9 @@
     <EmbeddedResource Include="Forms\Mantenimiento\FormTalonario.resx">
       <DependentUpon>FormTalonario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mantenimiento\FormTipoDocumento.resx">
+      <DependentUpon>FormTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,9 +367,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormProductoEditar.resx">
       <DependentUpon>FormProductoEditar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mantenimiento\FormProveedor.resx">
-      <DependentUpon>FormProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mantenimiento\FormProveedorAgregar.resx">
       <DependentUpon>FormProveedorAgregar.cs</DependentUpon>

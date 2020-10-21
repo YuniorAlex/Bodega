@@ -34,7 +34,7 @@ namespace CapaPresentacion.Forms
             frm.ShowDialog();
         }
 
-        private void btnbuscarproducto_Click(object sender, EventArgs e)
+        private void btnproductos_Click(object sender, EventArgs e)
         {
             FormBuscarProducto frm = new FormBuscarProducto();
             frm.ShowDialog();

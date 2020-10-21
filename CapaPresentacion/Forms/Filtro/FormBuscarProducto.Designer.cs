@@ -36,6 +36,13 @@
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnaceptar = new System.Windows.Forms.Button();
+            this.select = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.udm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +71,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.select,
+            this.codproducto,
+            this.descripcion,
+            this.marca,
+            this.precio,
+            this.udm,
+            this.stock});
             this.dataGridView1.Location = new System.Drawing.Point(12, 131);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(610, 234);
@@ -130,6 +145,48 @@
             this.btnaceptar.Text = "Aceptar";
             this.btnaceptar.UseVisualStyleBackColor = false;
             // 
+            // select
+            // 
+            this.select.HeaderText = "Seleccionar";
+            this.select.Name = "select";
+            this.select.Width = 70;
+            // 
+            // codproducto
+            // 
+            this.codproducto.HeaderText = "Codigo Producto";
+            this.codproducto.Name = "codproducto";
+            this.codproducto.Width = 70;
+            // 
+            // descripcion
+            // 
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.Width = 150;
+            // 
+            // marca
+            // 
+            this.marca.HeaderText = "Marca";
+            this.marca.Name = "marca";
+            this.marca.Width = 120;
+            // 
+            // precio
+            // 
+            this.precio.HeaderText = "Precio";
+            this.precio.Name = "precio";
+            this.precio.Width = 50;
+            // 
+            // udm
+            // 
+            this.udm.HeaderText = "UDM";
+            this.udm.Name = "udm";
+            this.udm.Width = 60;
+            // 
+            // stock
+            // 
+            this.stock.HeaderText = "Stock";
+            this.stock.Name = "stock";
+            this.stock.Width = 50;
+            // 
             // FormBuscarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,5 +221,12 @@
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnaceptar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn select;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codproducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn marca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn udm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock;
     }
 }

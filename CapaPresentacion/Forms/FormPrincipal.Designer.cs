@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panelconfiguracionmenudeplegable = new System.Windows.Forms.Panel();
+            this.btntipodocumento = new System.Windows.Forms.Button();
+            this.btntalonario = new System.Windows.Forms.Button();
             this.btnalmacen = new System.Windows.Forms.Button();
             this.btnpventa = new System.Windows.Forms.Button();
             this.btnconfiguracion = new System.Windows.Forms.Button();
@@ -60,7 +62,6 @@
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnmenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btntalonario = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             this.panelconfiguracionmenudeplegable.SuspendLayout();
             this.panelaccesossubmenudesplegable.SuspendLayout();
@@ -100,14 +101,55 @@
             // panelconfiguracionmenudeplegable
             // 
             this.panelconfiguracionmenudeplegable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(226)))), ((int)(((byte)(157)))));
+            this.panelconfiguracionmenudeplegable.Controls.Add(this.btntipodocumento);
             this.panelconfiguracionmenudeplegable.Controls.Add(this.btntalonario);
             this.panelconfiguracionmenudeplegable.Controls.Add(this.btnalmacen);
             this.panelconfiguracionmenudeplegable.Controls.Add(this.btnpventa);
             this.panelconfiguracionmenudeplegable.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelconfiguracionmenudeplegable.Location = new System.Drawing.Point(0, 680);
             this.panelconfiguracionmenudeplegable.Name = "panelconfiguracionmenudeplegable";
-            this.panelconfiguracionmenudeplegable.Size = new System.Drawing.Size(250, 120);
+            this.panelconfiguracionmenudeplegable.Size = new System.Drawing.Size(250, 160);
             this.panelconfiguracionmenudeplegable.TabIndex = 0;
+            // 
+            // btntipodocumento
+            // 
+            this.btntipodocumento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btntipodocumento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btntipodocumento.FlatAppearance.BorderSize = 0;
+            this.btntipodocumento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btntipodocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntipodocumento.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntipodocumento.Image = ((System.Drawing.Image)(resources.GetObject("btntipodocumento.Image")));
+            this.btntipodocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btntipodocumento.Location = new System.Drawing.Point(0, 120);
+            this.btntipodocumento.Name = "btntipodocumento";
+            this.btntipodocumento.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btntipodocumento.Size = new System.Drawing.Size(250, 40);
+            this.btntipodocumento.TabIndex = 8;
+            this.btntipodocumento.Text = "   Tipo Doc";
+            this.btntipodocumento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btntipodocumento.UseVisualStyleBackColor = true;
+            this.btntipodocumento.Click += new System.EventHandler(this.btntipodocumento_Click);
+            // 
+            // btntalonario
+            // 
+            this.btntalonario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btntalonario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btntalonario.FlatAppearance.BorderSize = 0;
+            this.btntalonario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btntalonario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntalonario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntalonario.Image = ((System.Drawing.Image)(resources.GetObject("btntalonario.Image")));
+            this.btntalonario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btntalonario.Location = new System.Drawing.Point(0, 80);
+            this.btntalonario.Name = "btntalonario";
+            this.btntalonario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btntalonario.Size = new System.Drawing.Size(250, 40);
+            this.btntalonario.TabIndex = 7;
+            this.btntalonario.Text = "   Talonario";
+            this.btntalonario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btntalonario.UseVisualStyleBackColor = true;
+            this.btntalonario.Click += new System.EventHandler(this.btntalonario_Click);
             // 
             // btnalmacen
             // 
@@ -556,26 +598,6 @@
             this.panelContenedor.Size = new System.Drawing.Size(1050, 600);
             this.panelContenedor.TabIndex = 2;
             // 
-            // btntalonario
-            // 
-            this.btntalonario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btntalonario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btntalonario.FlatAppearance.BorderSize = 0;
-            this.btntalonario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.btntalonario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btntalonario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntalonario.Image = ((System.Drawing.Image)(resources.GetObject("btntalonario.Image")));
-            this.btntalonario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btntalonario.Location = new System.Drawing.Point(0, 80);
-            this.btntalonario.Name = "btntalonario";
-            this.btntalonario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btntalonario.Size = new System.Drawing.Size(250, 40);
-            this.btntalonario.TabIndex = 7;
-            this.btntalonario.Text = "   Talonario";
-            this.btntalonario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btntalonario.UseVisualStyleBackColor = true;
-            this.btntalonario.Click += new System.EventHandler(this.btntalonario_Click);
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -640,5 +662,6 @@
         private System.Windows.Forms.Button btnpventa;
         private System.Windows.Forms.Button btnconfiguracion;
         private System.Windows.Forms.Button btntalonario;
+        private System.Windows.Forms.Button btntipodocumento;
     }
 }

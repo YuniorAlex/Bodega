@@ -31,11 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuario));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewProducto = new System.Windows.Forms.DataGridView();
+            this.idusuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             this.txttproveedor = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnnuevo = new System.Windows.Forms.Button();
+            this.btnguardar = new System.Windows.Forms.Button();
             this.btnexportar = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -82,10 +92,71 @@
             // 
             this.dataGridViewProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idusuario,
+            this.usuario,
+            this.nombres,
+            this.apaterno,
+            this.amaterno,
+            this.dni,
+            this.correo,
+            this.direccion,
+            this.rol,
+            this.estado});
             this.dataGridViewProducto.Location = new System.Drawing.Point(27, 334);
             this.dataGridViewProducto.Name = "dataGridViewProducto";
             this.dataGridViewProducto.Size = new System.Drawing.Size(1000, 205);
             this.dataGridViewProducto.TabIndex = 9;
+            // 
+            // idusuario
+            // 
+            this.idusuario.HeaderText = "Cod Usuario";
+            this.idusuario.Name = "idusuario";
+            // 
+            // usuario
+            // 
+            this.usuario.HeaderText = "Usuario";
+            this.usuario.Name = "usuario";
+            // 
+            // nombres
+            // 
+            this.nombres.HeaderText = "Nombres";
+            this.nombres.Name = "nombres";
+            // 
+            // apaterno
+            // 
+            this.apaterno.HeaderText = "Apellido Paterno";
+            this.apaterno.Name = "apaterno";
+            // 
+            // amaterno
+            // 
+            this.amaterno.HeaderText = "Apellido Materno";
+            this.amaterno.Name = "amaterno";
+            // 
+            // dni
+            // 
+            this.dni.HeaderText = "Dni";
+            this.dni.Name = "dni";
+            // 
+            // correo
+            // 
+            this.correo.HeaderText = "Correo";
+            this.correo.Name = "correo";
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "Direccion";
+            this.direccion.Name = "direccion";
+            // 
+            // rol
+            // 
+            this.rol.HeaderText = "Rol";
+            this.rol.Name = "rol";
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "Estado";
+            this.estado.Name = "estado";
             // 
             // pictureBox1
             // 
@@ -98,16 +169,16 @@
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtbuscar
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(74, 303);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(935, 25);
-            this.textBox1.TabIndex = 33;
-            this.textBox1.Text = "Buscar...";
+            this.txtbuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txtbuscar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbuscar.Location = new System.Drawing.Point(74, 303);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(935, 25);
+            this.txtbuscar.TabIndex = 11;
+            this.txtbuscar.Text = "Buscar...";
             // 
             // txttproveedor
             // 
@@ -133,23 +204,23 @@
             this.label9.TabIndex = 60;
             this.label9.Text = "Total de Usuarios";
             // 
-            // btnnuevo
+            // btnguardar
             // 
-            this.btnnuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnnuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
-            this.btnnuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnnuevo.FlatAppearance.BorderSize = 0;
-            this.btnnuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.btnnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnnuevo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnnuevo.Image")));
-            this.btnnuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnuevo.Location = new System.Drawing.Point(67, 558);
-            this.btnnuevo.Name = "btnnuevo";
-            this.btnnuevo.Size = new System.Drawing.Size(200, 30);
-            this.btnnuevo.TabIndex = 59;
-            this.btnnuevo.Text = "Guardar";
-            this.btnnuevo.UseVisualStyleBackColor = false;
+            this.btnguardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
+            this.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnguardar.FlatAppearance.BorderSize = 0;
+            this.btnguardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnguardar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardar.Image = ((System.Drawing.Image)(resources.GetObject("btnguardar.Image")));
+            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnguardar.Location = new System.Drawing.Point(67, 558);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(200, 30);
+            this.btnguardar.TabIndex = 12;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = false;
             // 
             // btnexportar
             // 
@@ -165,7 +236,7 @@
             this.btnexportar.Location = new System.Drawing.Point(793, 558);
             this.btnexportar.Name = "btnexportar";
             this.btnexportar.Size = new System.Drawing.Size(200, 30);
-            this.btnexportar.TabIndex = 64;
+            this.btnexportar.TabIndex = 15;
             this.btnexportar.Text = "Exportar";
             this.btnexportar.UseVisualStyleBackColor = false;
             // 
@@ -183,7 +254,7 @@
             this.btneditar.Location = new System.Drawing.Point(309, 558);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(200, 30);
-            this.btneditar.TabIndex = 63;
+            this.btneditar.TabIndex = 13;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = false;
             // 
@@ -201,7 +272,7 @@
             this.button2.Location = new System.Drawing.Point(551, 558);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 30);
-            this.button2.TabIndex = 62;
+            this.button2.TabIndex = 14;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -257,7 +328,7 @@
             this.txtusuario.Location = new System.Drawing.Point(114, 21);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(200, 23);
-            this.txtusuario.TabIndex = 71;
+            this.txtusuario.TabIndex = 1;
             // 
             // txtpassword
             // 
@@ -267,7 +338,7 @@
             this.txtpassword.Location = new System.Drawing.Point(417, 21);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(200, 23);
-            this.txtpassword.TabIndex = 72;
+            this.txtpassword.TabIndex = 2;
             // 
             // comboBoxrol
             // 
@@ -278,7 +349,7 @@
             this.comboBoxrol.Location = new System.Drawing.Point(182, 124);
             this.comboBoxrol.Name = "comboBoxrol";
             this.comboBoxrol.Size = new System.Drawing.Size(200, 23);
-            this.comboBoxrol.TabIndex = 74;
+            this.comboBoxrol.TabIndex = 9;
             // 
             // txtdireccion
             // 
@@ -288,7 +359,7 @@
             this.txtdireccion.Location = new System.Drawing.Point(512, 94);
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(200, 23);
-            this.txtdireccion.TabIndex = 76;
+            this.txtdireccion.TabIndex = 8;
             // 
             // label7
             // 
@@ -352,7 +423,7 @@
             this.comboBox1.Location = new System.Drawing.Point(512, 124);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 23);
-            this.comboBox1.TabIndex = 81;
+            this.comboBox1.TabIndex = 10;
             // 
             // label12
             // 
@@ -373,7 +444,7 @@
             this.txtcorreo.Location = new System.Drawing.Point(182, 94);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(200, 23);
-            this.txtcorreo.TabIndex = 79;
+            this.txtcorreo.TabIndex = 7;
             // 
             // txtdni
             // 
@@ -383,7 +454,7 @@
             this.txtdni.Location = new System.Drawing.Point(512, 34);
             this.txtdni.Name = "txtdni";
             this.txtdni.Size = new System.Drawing.Size(200, 23);
-            this.txtdni.TabIndex = 74;
+            this.txtdni.TabIndex = 4;
             // 
             // label11
             // 
@@ -415,7 +486,7 @@
             this.txtamaterno.Location = new System.Drawing.Point(512, 64);
             this.txtamaterno.Name = "txtamaterno";
             this.txtamaterno.Size = new System.Drawing.Size(200, 23);
-            this.txtamaterno.TabIndex = 78;
+            this.txtamaterno.TabIndex = 6;
             // 
             // txtnombres
             // 
@@ -425,7 +496,7 @@
             this.txtnombres.Location = new System.Drawing.Point(182, 34);
             this.txtnombres.Name = "txtnombres";
             this.txtnombres.Size = new System.Drawing.Size(200, 23);
-            this.txtnombres.TabIndex = 75;
+            this.txtnombres.TabIndex = 3;
             // 
             // label3
             // 
@@ -457,7 +528,7 @@
             this.txtapaterno.Location = new System.Drawing.Point(182, 64);
             this.txtapaterno.Name = "txtapaterno";
             this.txtapaterno.Size = new System.Drawing.Size(200, 23);
-            this.txtapaterno.TabIndex = 76;
+            this.txtapaterno.TabIndex = 5;
             // 
             // FormUsuario
             // 
@@ -472,9 +543,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txttproveedor);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnnuevo);
+            this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.dataGridViewProducto);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -497,10 +568,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewProducto;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.TextBox txttproveedor;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnnuevo;
+        private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btnexportar;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button button2;
@@ -526,5 +597,15 @@
         private System.Windows.Forms.TextBox txtapaterno;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idusuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombres;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apaterno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amaterno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
     }
 }
