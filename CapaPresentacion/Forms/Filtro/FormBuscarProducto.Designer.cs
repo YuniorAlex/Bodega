@@ -31,11 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBuscarProducto));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.btncancelar = new System.Windows.Forms.Button();
-            this.btnaceptar = new System.Windows.Forms.Button();
+            this.dataGridViewbuscarproducto = new System.Windows.Forms.DataGridView();
             this.select = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +39,12 @@
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.udm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.btncancelar = new System.Windows.Forms.Button();
+            this.btnaceptar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscarproducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,10 +68,10 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Buscar Producto";
             // 
-            // dataGridView1
+            // dataGridViewbuscarproducto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewbuscarproducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewbuscarproducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.select,
             this.codproducto,
             this.descripcion,
@@ -79,10 +79,52 @@
             this.precio,
             this.udm,
             this.stock});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(610, 234);
-            this.dataGridView1.TabIndex = 30;
+            this.dataGridViewbuscarproducto.Location = new System.Drawing.Point(12, 131);
+            this.dataGridViewbuscarproducto.Name = "dataGridViewbuscarproducto";
+            this.dataGridViewbuscarproducto.Size = new System.Drawing.Size(610, 234);
+            this.dataGridViewbuscarproducto.TabIndex = 30;
+            // 
+            // select
+            // 
+            this.select.HeaderText = "Seleccionar";
+            this.select.Name = "select";
+            this.select.Width = 70;
+            // 
+            // codproducto
+            // 
+            this.codproducto.HeaderText = "Codigo Producto";
+            this.codproducto.Name = "codproducto";
+            this.codproducto.Width = 70;
+            // 
+            // descripcion
+            // 
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.Width = 150;
+            // 
+            // marca
+            // 
+            this.marca.HeaderText = "Marca";
+            this.marca.Name = "marca";
+            this.marca.Width = 120;
+            // 
+            // precio
+            // 
+            this.precio.HeaderText = "Precio";
+            this.precio.Name = "precio";
+            this.precio.Width = 50;
+            // 
+            // udm
+            // 
+            this.udm.HeaderText = "UDM";
+            this.udm.Name = "udm";
+            this.udm.Width = 60;
+            // 
+            // stock
+            // 
+            this.stock.HeaderText = "Stock";
+            this.stock.Name = "stock";
+            this.stock.Width = 50;
             // 
             // pictureBox1
             // 
@@ -145,55 +187,13 @@
             this.btnaceptar.Text = "Aceptar";
             this.btnaceptar.UseVisualStyleBackColor = false;
             // 
-            // select
-            // 
-            this.select.HeaderText = "Seleccionar";
-            this.select.Name = "select";
-            this.select.Width = 70;
-            // 
-            // codproducto
-            // 
-            this.codproducto.HeaderText = "Codigo Producto";
-            this.codproducto.Name = "codproducto";
-            this.codproducto.Width = 70;
-            // 
-            // descripcion
-            // 
-            this.descripcion.HeaderText = "Descripcion";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.Width = 150;
-            // 
-            // marca
-            // 
-            this.marca.HeaderText = "Marca";
-            this.marca.Name = "marca";
-            this.marca.Width = 120;
-            // 
-            // precio
-            // 
-            this.precio.HeaderText = "Precio";
-            this.precio.Name = "precio";
-            this.precio.Width = 50;
-            // 
-            // udm
-            // 
-            this.udm.HeaderText = "UDM";
-            this.udm.Name = "udm";
-            this.udm.Width = 60;
-            // 
-            // stock
-            // 
-            this.stock.HeaderText = "Stock";
-            this.stock.Name = "stock";
-            this.stock.Width = 50;
-            // 
             // FormBuscarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(233)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(634, 433);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewbuscarproducto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.btncancelar);
@@ -205,7 +205,7 @@
             this.Text = "FormBuscarProducto";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscarproducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -216,7 +216,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewbuscarproducto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Button btncancelar;

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPuntoVenta));
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnguardar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewpuntoventa = new System.Windows.Forms.DataGridView();
             this.codpuntoventa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtcodpuntoventa = new System.Windows.Forms.TextBox();
@@ -40,7 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewpuntoventa)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,16 +83,16 @@
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dataGridViewpuntoventa
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewpuntoventa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewpuntoventa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codpuntoventa,
             this.descripcion});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 284);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(576, 204);
-            this.dataGridView1.TabIndex = 28;
+            this.dataGridViewpuntoventa.Location = new System.Drawing.Point(12, 284);
+            this.dataGridViewpuntoventa.Name = "dataGridViewpuntoventa";
+            this.dataGridViewpuntoventa.Size = new System.Drawing.Size(576, 204);
+            this.dataGridViewpuntoventa.TabIndex = 28;
             // 
             // codpuntoventa
             // 
@@ -175,7 +175,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnguardar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewpuntoventa);
             this.Controls.Add(this.txtcodpuntoventa);
             this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.label4);
@@ -184,7 +184,7 @@
             this.Name = "FormPuntoVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPuntoVenta";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewpuntoventa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -196,7 +196,7 @@
 
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnguardar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewpuntoventa;
         private System.Windows.Forms.TextBox txtcodpuntoventa;
         private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.Label label4;

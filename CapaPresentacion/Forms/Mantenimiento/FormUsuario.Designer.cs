@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuario));
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridViewProducto = new System.Windows.Forms.DataGridView();
+            this.dataGridViewusuario = new System.Windows.Forms.DataGridView();
             this.idusuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +71,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtapaterno = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -88,11 +88,11 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Registros de Usuario";
             // 
-            // dataGridViewProducto
+            // dataGridViewusuario
             // 
-            this.dataGridViewProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewusuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewusuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idusuario,
             this.usuario,
             this.nombres,
@@ -103,10 +103,10 @@
             this.direccion,
             this.rol,
             this.estado});
-            this.dataGridViewProducto.Location = new System.Drawing.Point(27, 334);
-            this.dataGridViewProducto.Name = "dataGridViewProducto";
-            this.dataGridViewProducto.Size = new System.Drawing.Size(1000, 205);
-            this.dataGridViewProducto.TabIndex = 9;
+            this.dataGridViewusuario.Location = new System.Drawing.Point(27, 334);
+            this.dataGridViewusuario.Name = "dataGridViewusuario";
+            this.dataGridViewusuario.Size = new System.Drawing.Size(1000, 205);
+            this.dataGridViewusuario.TabIndex = 9;
             // 
             // idusuario
             // 
@@ -546,13 +546,13 @@
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbuscar);
-            this.Controls.Add(this.dataGridViewProducto);
+            this.Controls.Add(this.dataGridViewusuario);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUsuario";
             this.Text = "FormAcceso";
             this.Load += new System.EventHandler(this.FormUsuario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewusuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -566,7 +566,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridViewProducto;
+        private System.Windows.Forms.DataGridView dataGridViewusuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.TextBox txttproveedor;

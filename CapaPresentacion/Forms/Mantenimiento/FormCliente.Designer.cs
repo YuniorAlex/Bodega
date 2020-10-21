@@ -35,7 +35,7 @@
             this.btneditar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnguardar = new System.Windows.Forms.Button();
-            this.dataGridViewCliente = new System.Windows.Forms.DataGridView();
+            this.dataGridViewcliente = new System.Windows.Forms.DataGridView();
             this.idcliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +64,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.comboBoxtipodocumento = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,11 +166,11 @@
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = false;
             // 
-            // dataGridViewCliente
+            // dataGridViewcliente
             // 
-            this.dataGridViewCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewcliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewcliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idcliente,
             this.nombre,
             this.apellido,
@@ -179,10 +179,10 @@
             this.telefono,
             this.direccion,
             this.correo});
-            this.dataGridViewCliente.Location = new System.Drawing.Point(27, 278);
-            this.dataGridViewCliente.Name = "dataGridViewCliente";
-            this.dataGridViewCliente.Size = new System.Drawing.Size(1000, 261);
-            this.dataGridViewCliente.TabIndex = 30;
+            this.dataGridViewcliente.Location = new System.Drawing.Point(27, 278);
+            this.dataGridViewcliente.Name = "dataGridViewcliente";
+            this.dataGridViewcliente.Size = new System.Drawing.Size(1000, 261);
+            this.dataGridViewcliente.TabIndex = 30;
             // 
             // idcliente
             // 
@@ -466,7 +466,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridViewCliente);
+            this.Controls.Add(this.dataGridViewcliente);
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.button2);
@@ -477,7 +477,7 @@
             this.Name = "FormCliente";
             this.Text = "FormCliente";
             this.Load += new System.EventHandler(this.FormCliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -492,7 +492,7 @@
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnguardar;
-        private System.Windows.Forms.DataGridView dataGridViewCliente;
+        private System.Windows.Forms.DataGridView dataGridViewcliente;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label6;

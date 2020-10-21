@@ -36,10 +36,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewbuscarcliente = new System.Windows.Forms.DataGridView();
+            this.idcliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombrecliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrodocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscarcliente)).BeginInit();
             this.SuspendLayout();
             // 
             // btncerrar
@@ -136,13 +142,50 @@
             this.txtbuscar.TabIndex = 23;
             this.txtbuscar.Text = "Buscar...";
             // 
-            // dataGridView1
+            // dataGridViewbuscarcliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(610, 234);
-            this.dataGridView1.TabIndex = 25;
+            this.dataGridViewbuscarcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewbuscarcliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idcliente,
+            this.nombrecliente,
+            this.nrodocumento,
+            this.telefono,
+            this.direccion,
+            this.correo});
+            this.dataGridViewbuscarcliente.Location = new System.Drawing.Point(12, 131);
+            this.dataGridViewbuscarcliente.Name = "dataGridViewbuscarcliente";
+            this.dataGridViewbuscarcliente.Size = new System.Drawing.Size(610, 234);
+            this.dataGridViewbuscarcliente.TabIndex = 25;
+            // 
+            // idcliente
+            // 
+            this.idcliente.HeaderText = "Codigo Cliente";
+            this.idcliente.Name = "idcliente";
+            // 
+            // nombrecliente
+            // 
+            this.nombrecliente.HeaderText = "Cliente";
+            this.nombrecliente.Name = "nombrecliente";
+            // 
+            // nrodocumento
+            // 
+            this.nrodocumento.HeaderText = "Numero Documento";
+            this.nrodocumento.Name = "nrodocumento";
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "Direccion";
+            this.direccion.Name = "direccion";
+            // 
+            // correo
+            // 
+            this.correo.HeaderText = "Correo";
+            this.correo.Name = "correo";
             // 
             // FormBuscarCliente
             // 
@@ -150,7 +193,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(233)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(634, 433);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewbuscarcliente);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.panel1);
@@ -164,7 +207,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscarcliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +222,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtbuscar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewbuscarcliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombrecliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nrodocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo;
     }
 }

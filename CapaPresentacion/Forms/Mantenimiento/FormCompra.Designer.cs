@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCompra));
             this.btncerrar = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridViewProducto = new System.Windows.Forms.DataGridView();
+            this.dataGridViewcompra = new System.Windows.Forms.DataGridView();
             this.nroitem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,7 +69,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnproductos = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcompra)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnbuscarproveedor)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -101,11 +101,11 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Compras";
             // 
-            // dataGridViewProducto
+            // dataGridViewcompra
             // 
-            this.dataGridViewProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewcompra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewcompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewcompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nroitem,
             this.codproducto,
             this.nombproducto,
@@ -115,10 +115,10 @@
             this.basecalculada,
             this.igv,
             this.importe});
-            this.dataGridViewProducto.Location = new System.Drawing.Point(27, 259);
-            this.dataGridViewProducto.Name = "dataGridViewProducto";
-            this.dataGridViewProducto.Size = new System.Drawing.Size(1000, 268);
-            this.dataGridViewProducto.TabIndex = 10;
+            this.dataGridViewcompra.Location = new System.Drawing.Point(27, 259);
+            this.dataGridViewcompra.Name = "dataGridViewcompra";
+            this.dataGridViewcompra.Size = new System.Drawing.Size(1000, 268);
+            this.dataGridViewcompra.TabIndex = 10;
             // 
             // nroitem
             // 
@@ -542,14 +542,14 @@
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnguardar);
-            this.Controls.Add(this.dataGridViewProducto);
+            this.Controls.Add(this.dataGridViewcompra);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btncerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCompra";
             this.Text = "FormCompra";
             this.Load += new System.EventHandler(this.FormCompra_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcompra)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnbuscarproveedor)).EndInit();
@@ -565,7 +565,7 @@
         #endregion
         private System.Windows.Forms.Label btncerrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridViewProducto;
+        private System.Windows.Forms.DataGridView dataGridViewcompra;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.Button btnborrar;
         private System.Windows.Forms.Button btnguardar;

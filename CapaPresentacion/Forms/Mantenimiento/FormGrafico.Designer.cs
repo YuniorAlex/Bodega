@@ -35,11 +35,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(237, 53);
+            this.label1.Location = new System.Drawing.Point(255, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "EMPLEADO";
+            this.label1.Text = "MANTENIMIENTO";
             // 
             // btncerrar
             // 
@@ -55,7 +55,7 @@
             this.btncerrar.Text = "X";
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
-            // FormEmpleado
+            // FormGrafico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -63,7 +63,7 @@
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormEmpleado";
+            this.Name = "FormGrafico";
             this.Text = "FormEmpleado";
             this.ResumeLayout(false);
             this.PerformLayout();

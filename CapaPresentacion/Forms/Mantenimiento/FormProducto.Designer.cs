@@ -34,7 +34,7 @@
             this.btncerrar = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
-            this.dataGridViewProducto = new System.Windows.Forms.DataGridView();
+            this.dataGridViewproducto = new System.Windows.Forms.DataGridView();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,14 +54,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtmarca = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.fechaadd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.udm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewproducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,22 +146,22 @@
             this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
-            // dataGridViewProducto
+            // dataGridViewproducto
             // 
-            this.dataGridViewProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewproducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewproducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewproducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.fechaadd,
             this.codproducto,
             this.descripcion,
             this.marca,
             this.precio,
-            this.Column1,
             this.udm,
             this.stock});
-            this.dataGridViewProducto.Location = new System.Drawing.Point(27, 229);
-            this.dataGridViewProducto.Name = "dataGridViewProducto";
-            this.dataGridViewProducto.Size = new System.Drawing.Size(1000, 310);
-            this.dataGridViewProducto.TabIndex = 8;
+            this.dataGridViewproducto.Location = new System.Drawing.Point(27, 229);
+            this.dataGridViewproducto.Name = "dataGridViewproducto";
+            this.dataGridViewproducto.Size = new System.Drawing.Size(1000, 310);
+            this.dataGridViewproducto.TabIndex = 8;
             // 
             // txtbuscar
             // 
@@ -383,6 +383,11 @@
             this.label8.TabIndex = 23;
             this.label8.Text = "Marca :";
             // 
+            // fechaadd
+            // 
+            this.fechaadd.HeaderText = "Fecha";
+            this.fechaadd.Name = "fechaadd";
+            // 
             // codproducto
             // 
             this.codproducto.HeaderText = "Codigo Producto";
@@ -402,11 +407,6 @@
             // 
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
             // 
             // udm
             // 
@@ -443,7 +443,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtbuscar);
-            this.Controls.Add(this.dataGridViewProducto);
+            this.Controls.Add(this.dataGridViewproducto);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btncerrar);
@@ -453,7 +453,7 @@
             this.Name = "FormProducto";
             this.Text = "FormProducto";
             this.Load += new System.EventHandler(this.FormProducto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewproducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -467,7 +467,7 @@
         private System.Windows.Forms.Label btncerrar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btneditar;
-        private System.Windows.Forms.DataGridView dataGridViewProducto;
+        private System.Windows.Forms.DataGridView dataGridViewproducto;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -487,11 +487,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtmarca;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaadd;
         private System.Windows.Forms.DataGridViewTextBoxColumn codproducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn udm;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock;
     }

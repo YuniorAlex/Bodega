@@ -31,13 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBuscarProveedor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewbuscarproveedor = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnaceptar = new System.Windows.Forms.Button();
+            this.codproveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombproveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipodocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrodocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscarproveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,13 +68,21 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Buscar Proveedor";
             // 
-            // dataGridView1
+            // dataGridViewbuscarproveedor
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(610, 234);
-            this.dataGridView1.TabIndex = 35;
+            this.dataGridViewbuscarproveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewbuscarproveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codproveedor,
+            this.nombproveedor,
+            this.tipodocumento,
+            this.nrodocumento,
+            this.telefono,
+            this.direccion,
+            this.correo});
+            this.dataGridViewbuscarproveedor.Location = new System.Drawing.Point(12, 131);
+            this.dataGridViewbuscarproveedor.Name = "dataGridViewbuscarproveedor";
+            this.dataGridViewbuscarproveedor.Size = new System.Drawing.Size(610, 234);
+            this.dataGridViewbuscarproveedor.TabIndex = 35;
             // 
             // pictureBox1
             // 
@@ -130,13 +145,48 @@
             this.btnaceptar.Text = "Aceptar";
             this.btnaceptar.UseVisualStyleBackColor = false;
             // 
+            // codproveedor
+            // 
+            this.codproveedor.HeaderText = "Codigo";
+            this.codproveedor.Name = "codproveedor";
+            // 
+            // nombproveedor
+            // 
+            this.nombproveedor.HeaderText = "Nombre";
+            this.nombproveedor.Name = "nombproveedor";
+            // 
+            // tipodocumento
+            // 
+            this.tipodocumento.HeaderText = "Tipo Documento";
+            this.tipodocumento.Name = "tipodocumento";
+            // 
+            // nrodocumento
+            // 
+            this.nrodocumento.HeaderText = "Numero de Documento";
+            this.nrodocumento.Name = "nrodocumento";
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "Direccion";
+            this.direccion.Name = "direccion";
+            // 
+            // correo
+            // 
+            this.correo.HeaderText = "Correo";
+            this.correo.Name = "correo";
+            // 
             // FormBuscarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(233)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(634, 433);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewbuscarproveedor);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.btncancelar);
@@ -148,7 +198,7 @@
             this.Text = "FormBuscarProveedor";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscarproveedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,10 +209,17 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewbuscarproveedor;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnaceptar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codproveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombproveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipodocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nrodocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo;
     }
 }

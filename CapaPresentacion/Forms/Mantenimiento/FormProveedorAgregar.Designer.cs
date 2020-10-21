@@ -49,7 +49,7 @@
             this.txtdireccion = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBoxtipodocumento = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewproveedor = new System.Windows.Forms.DataGridView();
             this.codproveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombproveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipodoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +60,7 @@
             this.btneditar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewproveedor)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -282,10 +282,10 @@
             this.comboBoxtipodocumento.Size = new System.Drawing.Size(221, 23);
             this.comboBoxtipodocumento.TabIndex = 3;
             // 
-            // dataGridView1
+            // dataGridViewproveedor
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewproveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewproveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codproveedor,
             this.nombproveedor,
             this.tipodoc,
@@ -293,10 +293,10 @@
             this.telefono,
             this.direccion,
             this.correo});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 291);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(576, 150);
-            this.dataGridView1.TabIndex = 47;
+            this.dataGridViewproveedor.Location = new System.Drawing.Point(12, 291);
+            this.dataGridViewproveedor.Name = "dataGridViewproveedor";
+            this.dataGridViewproveedor.Size = new System.Drawing.Size(576, 150);
+            this.dataGridViewproveedor.TabIndex = 47;
             // 
             // codproveedor
             // 
@@ -359,7 +359,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(233)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(600, 500);
             this.Controls.Add(this.btneditar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewproveedor);
             this.Controls.Add(this.comboBoxtipodocumento);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtdireccion);
@@ -386,7 +386,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewproveedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,7 +414,7 @@
         private System.Windows.Forms.TextBox txtdireccion;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBoxtipodocumento;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewproveedor;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.DataGridViewTextBoxColumn codproveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombproveedor;
