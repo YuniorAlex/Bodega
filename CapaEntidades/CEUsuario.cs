@@ -16,8 +16,13 @@ namespace CapaEntidades
            public string idusuario{get; set;}
            public string usuario  {get; set;}
            public string password {get; set;}
-           public string idrol    {get; set;}
-           public string idpersona { get; set; }
-           public string fechaadd { get; set; }
+           public string nombres { get; set; }
+           public string apaterno { get; set; }
+           public string amaterno { get; set; }
+           public string dni { get; set; }
+           public string correo { get; set; }
+           public string direccion { get; set; }
+           public int idrol    {get; set;}
+           public bool estado { get; set; }
     }
 }

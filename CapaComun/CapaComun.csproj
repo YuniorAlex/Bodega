@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enumeraciones\DbConexion.cs" />
     <Compile Include="Enumeraciones\Icono.cs" />
+    <Compile Include="Enumeraciones\Tareas.cs" />
+    <Compile Include="Eventos\Entidad.cs" />
+    <Compile Include="Eventos\Listado.cs" />
     <Compile Include="Eventos\Mensaje.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

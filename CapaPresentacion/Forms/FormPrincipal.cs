@@ -53,21 +53,21 @@ namespace CapaPresentacion.Forms
             }
         }
         #endregion
-        public class Formulario : FormUsuario
-        {
+        //public class Formulario : FormUsuario
+        //{
 
-        }
+        //}
 
         private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
         {
 
         }
 
-        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Formulario frm = new Formulario();
-            frm.Show();
-        }
+        //private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    Formulario frm = new Formulario();
+        //    frm.Show();
+        //}
 
         private void btnmenu_Click(object sender, EventArgs e)
         {
@@ -183,7 +183,7 @@ namespace CapaPresentacion.Forms
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
-            FormUsuario frm = new FormUsuario();
+            FormUsuario frm = new FormUsuario(CapaComun.Enumeraciones.Tarea.Registrar);
             frm.FormClosed += new FormClosedEventHandler(mostrarInicioAlCerrarForm);
             AbrirFormInPanel(frm);
             OcultarSubMenu();

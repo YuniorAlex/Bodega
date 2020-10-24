@@ -27,5 +27,7 @@ namespace CapaEntidades
         public bool Hubo_Error { get; set; }
         public bool Proceso_Cancelado { get; set; }
         public Exception Error { get; set; }
+
+
     }
 }

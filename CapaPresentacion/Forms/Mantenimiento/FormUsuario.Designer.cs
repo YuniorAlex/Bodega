@@ -45,7 +45,7 @@
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.txttproveedor = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnguardar = new System.Windows.Forms.Button();
+            this.btn_Guardar = new System.Windows.Forms.Button();
             this.btnexportar = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -53,24 +53,24 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtusuario = new System.Windows.Forms.TextBox();
-            this.txtpassword = new System.Windows.Forms.TextBox();
-            this.comboBoxrol = new System.Windows.Forms.ComboBox();
-            this.txtdireccion = new System.Windows.Forms.TextBox();
+            this.txt_Usuario = new System.Windows.Forms.TextBox();
+            this.txt_pass = new System.Windows.Forms.TextBox();
+            this.cbx_Rol = new System.Windows.Forms.ComboBox();
+            this.txt_Direccion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbx_Estado = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtcorreo = new System.Windows.Forms.TextBox();
-            this.txtdni = new System.Windows.Forms.TextBox();
+            this.txt_Correo = new System.Windows.Forms.TextBox();
+            this.txt_Dni = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtamaterno = new System.Windows.Forms.TextBox();
-            this.txtnombres = new System.Windows.Forms.TextBox();
+            this.txt_Amaterno = new System.Windows.Forms.TextBox();
+            this.txt_Nombres = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtapaterno = new System.Windows.Forms.TextBox();
+            this.txt_Apaterno = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -204,23 +204,24 @@
             this.label9.TabIndex = 60;
             this.label9.Text = "Total de Usuarios";
             // 
-            // btnguardar
+            // btn_Guardar
             // 
-            this.btnguardar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
-            this.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnguardar.FlatAppearance.BorderSize = 0;
-            this.btnguardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
-            this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnguardar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnguardar.Image = ((System.Drawing.Image)(resources.GetObject("btnguardar.Image")));
-            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnguardar.Location = new System.Drawing.Point(67, 558);
-            this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(200, 30);
-            this.btnguardar.TabIndex = 12;
-            this.btnguardar.Text = "Guardar";
-            this.btnguardar.UseVisualStyleBackColor = false;
+            this.btn_Guardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(212)))), ((int)(((byte)(107)))));
+            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Guardar.FlatAppearance.BorderSize = 0;
+            this.btn_Guardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(161)))), ((int)(((byte)(129)))));
+            this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Guardar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.Image")));
+            this.btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Guardar.Location = new System.Drawing.Point(67, 558);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(200, 30);
+            this.btn_Guardar.TabIndex = 12;
+            this.btn_Guardar.Text = "Guardar";
+            this.btn_Guardar.UseVisualStyleBackColor = false;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // btnexportar
             // 
@@ -320,46 +321,46 @@
             this.label6.TabIndex = 70;
             this.label6.Text = "Password :";
             // 
-            // txtusuario
+            // txt_Usuario
             // 
-            this.txtusuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtusuario.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusuario.Location = new System.Drawing.Point(114, 21);
-            this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(200, 23);
-            this.txtusuario.TabIndex = 1;
+            this.txt_Usuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_Usuario.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Usuario.Location = new System.Drawing.Point(114, 21);
+            this.txt_Usuario.Name = "txt_Usuario";
+            this.txt_Usuario.Size = new System.Drawing.Size(200, 23);
+            this.txt_Usuario.TabIndex = 1;
             // 
-            // txtpassword
+            // txt_pass
             // 
-            this.txtpassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtpassword.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.Location = new System.Drawing.Point(417, 21);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(200, 23);
-            this.txtpassword.TabIndex = 2;
+            this.txt_pass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_pass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_pass.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.Location = new System.Drawing.Point(417, 21);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Size = new System.Drawing.Size(200, 23);
+            this.txt_pass.TabIndex = 2;
             // 
-            // comboBoxrol
+            // cbx_Rol
             // 
-            this.comboBoxrol.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBoxrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.comboBoxrol.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxrol.FormattingEnabled = true;
-            this.comboBoxrol.Location = new System.Drawing.Point(182, 124);
-            this.comboBoxrol.Name = "comboBoxrol";
-            this.comboBoxrol.Size = new System.Drawing.Size(200, 23);
-            this.comboBoxrol.TabIndex = 9;
+            this.cbx_Rol.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbx_Rol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.cbx_Rol.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_Rol.FormattingEnabled = true;
+            this.cbx_Rol.Location = new System.Drawing.Point(182, 124);
+            this.cbx_Rol.Name = "cbx_Rol";
+            this.cbx_Rol.Size = new System.Drawing.Size(200, 23);
+            this.cbx_Rol.TabIndex = 9;
             // 
-            // txtdireccion
+            // txt_Direccion
             // 
-            this.txtdireccion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtdireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtdireccion.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdireccion.Location = new System.Drawing.Point(512, 94);
-            this.txtdireccion.Name = "txtdireccion";
-            this.txtdireccion.Size = new System.Drawing.Size(200, 23);
-            this.txtdireccion.TabIndex = 8;
+            this.txt_Direccion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Direccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_Direccion.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Direccion.Location = new System.Drawing.Point(512, 94);
+            this.txt_Direccion.Name = "txt_Direccion";
+            this.txt_Direccion.Size = new System.Drawing.Size(200, 23);
+            this.txt_Direccion.TabIndex = 8;
             // 
             // label7
             // 
@@ -375,9 +376,9 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.txtusuario);
+            this.groupBox1.Controls.Add(this.txt_Usuario);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtpassword);
+            this.groupBox1.Controls.Add(this.txt_pass);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(164, 50);
@@ -390,21 +391,21 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cbx_Estado);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.txtcorreo);
-            this.groupBox2.Controls.Add(this.txtdni);
+            this.groupBox2.Controls.Add(this.txt_Correo);
+            this.groupBox2.Controls.Add(this.txt_Dni);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.txtamaterno);
-            this.groupBox2.Controls.Add(this.txtdireccion);
-            this.groupBox2.Controls.Add(this.txtnombres);
-            this.groupBox2.Controls.Add(this.comboBoxrol);
+            this.groupBox2.Controls.Add(this.txt_Amaterno);
+            this.groupBox2.Controls.Add(this.txt_Direccion);
+            this.groupBox2.Controls.Add(this.txt_Nombres);
+            this.groupBox2.Controls.Add(this.cbx_Rol);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.txtapaterno);
+            this.groupBox2.Controls.Add(this.txt_Apaterno);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(90, 120);
@@ -414,16 +415,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Empleado";
             // 
-            // comboBox1
+            // cbx_Estado
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.comboBox1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(512, 124);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 23);
-            this.comboBox1.TabIndex = 10;
+            this.cbx_Estado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbx_Estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.cbx_Estado.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_Estado.FormattingEnabled = true;
+            this.cbx_Estado.Location = new System.Drawing.Point(512, 124);
+            this.cbx_Estado.Name = "cbx_Estado";
+            this.cbx_Estado.Size = new System.Drawing.Size(200, 23);
+            this.cbx_Estado.TabIndex = 10;
             // 
             // label12
             // 
@@ -436,25 +437,25 @@
             this.label12.TabIndex = 80;
             this.label12.Text = "Estado :";
             // 
-            // txtcorreo
+            // txt_Correo
             // 
-            this.txtcorreo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtcorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtcorreo.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcorreo.Location = new System.Drawing.Point(182, 94);
-            this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(200, 23);
-            this.txtcorreo.TabIndex = 7;
+            this.txt_Correo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Correo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_Correo.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Correo.Location = new System.Drawing.Point(182, 94);
+            this.txt_Correo.Name = "txt_Correo";
+            this.txt_Correo.Size = new System.Drawing.Size(200, 23);
+            this.txt_Correo.TabIndex = 7;
             // 
-            // txtdni
+            // txt_Dni
             // 
-            this.txtdni.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtdni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtdni.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdni.Location = new System.Drawing.Point(512, 34);
-            this.txtdni.Name = "txtdni";
-            this.txtdni.Size = new System.Drawing.Size(200, 23);
-            this.txtdni.TabIndex = 4;
+            this.txt_Dni.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Dni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_Dni.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Dni.Location = new System.Drawing.Point(512, 34);
+            this.txt_Dni.Name = "txt_Dni";
+            this.txt_Dni.Size = new System.Drawing.Size(200, 23);
+            this.txt_Dni.TabIndex = 4;
             // 
             // label11
             // 
@@ -478,25 +479,25 @@
             this.label10.TabIndex = 77;
             this.label10.Text = "A. Materno :";
             // 
-            // txtamaterno
+            // txt_Amaterno
             // 
-            this.txtamaterno.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtamaterno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtamaterno.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtamaterno.Location = new System.Drawing.Point(512, 64);
-            this.txtamaterno.Name = "txtamaterno";
-            this.txtamaterno.Size = new System.Drawing.Size(200, 23);
-            this.txtamaterno.TabIndex = 6;
+            this.txt_Amaterno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Amaterno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_Amaterno.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Amaterno.Location = new System.Drawing.Point(512, 64);
+            this.txt_Amaterno.Name = "txt_Amaterno";
+            this.txt_Amaterno.Size = new System.Drawing.Size(200, 23);
+            this.txt_Amaterno.TabIndex = 6;
             // 
-            // txtnombres
+            // txt_Nombres
             // 
-            this.txtnombres.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtnombres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtnombres.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombres.Location = new System.Drawing.Point(182, 34);
-            this.txtnombres.Name = "txtnombres";
-            this.txtnombres.Size = new System.Drawing.Size(200, 23);
-            this.txtnombres.TabIndex = 3;
+            this.txt_Nombres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Nombres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_Nombres.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nombres.Location = new System.Drawing.Point(182, 34);
+            this.txt_Nombres.Name = "txt_Nombres";
+            this.txt_Nombres.Size = new System.Drawing.Size(200, 23);
+            this.txt_Nombres.TabIndex = 3;
             // 
             // label3
             // 
@@ -520,15 +521,15 @@
             this.label8.TabIndex = 74;
             this.label8.Text = "A. Paterno :";
             // 
-            // txtapaterno
+            // txt_Apaterno
             // 
-            this.txtapaterno.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtapaterno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
-            this.txtapaterno.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtapaterno.Location = new System.Drawing.Point(182, 64);
-            this.txtapaterno.Name = "txtapaterno";
-            this.txtapaterno.Size = new System.Drawing.Size(200, 23);
-            this.txtapaterno.TabIndex = 5;
+            this.txt_Apaterno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Apaterno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
+            this.txt_Apaterno.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Apaterno.Location = new System.Drawing.Point(182, 64);
+            this.txt_Apaterno.Name = "txt_Apaterno";
+            this.txt_Apaterno.Size = new System.Drawing.Size(200, 23);
+            this.txt_Apaterno.TabIndex = 5;
             // 
             // FormUsuario
             // 
@@ -543,7 +544,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txttproveedor);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnguardar);
+            this.Controls.Add(this.btn_Guardar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.dataGridViewusuario);
@@ -551,7 +552,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUsuario";
             this.Text = "FormAcceso";
-            this.Load += new System.EventHandler(this.FormUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewusuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -571,7 +571,7 @@
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.TextBox txttproveedor;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnguardar;
+        private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.Button btnexportar;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button button2;
@@ -579,23 +579,23 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtusuario;
-        private System.Windows.Forms.TextBox txtpassword;
-        private System.Windows.Forms.ComboBox comboBoxrol;
-        private System.Windows.Forms.TextBox txtdireccion;
+        private System.Windows.Forms.TextBox txt_Usuario;
+        private System.Windows.Forms.TextBox txt_pass;
+        private System.Windows.Forms.ComboBox cbx_Rol;
+        private System.Windows.Forms.TextBox txt_Direccion;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtcorreo;
-        private System.Windows.Forms.TextBox txtdni;
+        private System.Windows.Forms.TextBox txt_Correo;
+        private System.Windows.Forms.TextBox txt_Dni;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtamaterno;
-        private System.Windows.Forms.TextBox txtnombres;
+        private System.Windows.Forms.TextBox txt_Amaterno;
+        private System.Windows.Forms.TextBox txt_Nombres;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtapaterno;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txt_Apaterno;
+        private System.Windows.Forms.ComboBox cbx_Estado;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn idusuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
