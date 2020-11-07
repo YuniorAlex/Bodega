@@ -18,6 +18,7 @@ namespace CapaPresentacion.Forms
     {
         #region Variables
         private CNUsuario _cnUsuario;
+        private CNRol _cnRol;
         private Tarea _tarea;
 
         #endregion
@@ -28,17 +29,27 @@ namespace CapaPresentacion.Forms
             InitializeComponent();
             _tarea = tarea;
             _cnUsuario = new CNUsuario();
-            _cnUsuario.MensajeAlerta += _cnUsuario_MensajeAlerta;
+            _cnUsuario.MensajeAlerta += _cn_MensajeAlerta;
             _cnUsuario.MensajeError += _cnUsuario_MensajeError;
             _cnUsuario.MensajeInformacion += _cnUsuario_MensajeInformacion;
             _cnUsuario.NotificacionTermino += _cnUsuario_NotificacionTermino;
             _cnUsuario.CargarEntidad += _cnUsuario_CargarEntidad;
+
+            _cnRol = new CNRol();
+            _cnRol.MensajeAlerta += _cn_MensajeAlerta;
+            _cnRol.CargarInformacion += _cnRol_CargarInformacion;
+            CargarRol();
         }
 
-       
+
         #endregion
 
         #region Metodos
+        private void CargarRol()
+        {
+            _cnRol.Iniciar(CapaComun.Enumeraciones.Tarea.Listar);
+            _cnRol.Procesar();
+        }
         private void Procesar_Informacion()
         {
             _cnUsuario.Iniciar(_tarea);
@@ -57,7 +68,7 @@ namespace CapaPresentacion.Forms
         #endregion
 
         #region Eventos
-        private void _cnUsuario_MensajeAlerta(object sender, CapaComun.Eventos.MensajeEventArgs e)
+        private void _cn_MensajeAlerta(object sender, CapaComun.Eventos.MensajeEventArgs e)
         {
             MessageBox.Show(e.Detalle, e.Titulo, MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Exclamation);
         }
@@ -77,6 +88,17 @@ namespace CapaPresentacion.Forms
         {
             DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void _cnRol_CargarInformacion(object sender, CapaComun.Eventos.ListadoEventArgs<CERol> e)
+        {
+            cbx_Rol.DisplayMember = "rol";
+            cbx_Rol.ValueMember = "idrol";
+            cbx_Rol.DataSource = e.Lista;
+
+            //cbx_Rol.BestFitMode = XtraEditors.Controls.BestFitMode.BestFitResizePopup;
+
+            
         }
         private void btn_Guardar_Click(object sender, EventArgs e)
         {

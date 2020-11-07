@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CEBase.cs" />
+    <Compile Include="CERol.cs" />
     <Compile Include="CEUsuario.cs" />
     <Compile Include="Globales.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

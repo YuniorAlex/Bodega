@@ -14,6 +14,7 @@ namespace CapaComun.Enumeraciones
         Eliminar,
         Anular,
         Consultar,
+        Listar,
         Reportar,
         Seleccionar,
         Buscar,

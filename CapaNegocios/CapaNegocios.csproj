@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="CNBase.cs" />
     <Compile Include="CNLogin.cs" />
+    <Compile Include="CNRol.cs" />
     <Compile Include="CNUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

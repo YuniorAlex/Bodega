@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAOBase.cs" />
+    <Compile Include="DAORol.cs" />
     <Compile Include="DAOUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
