@@ -13,6 +13,7 @@ namespace CapaDatos
     {
         public Resultado<CEUsuario> Insertar(CEUsuario dto)
         {
+           
             Resultado<CEUsuario> Result = new Resultado<CEUsuario>();
             this._parametersValues = new DynamicParameters();
             this._parametersValues.Add("@USUARIO", dto.usuario);

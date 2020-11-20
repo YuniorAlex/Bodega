@@ -57,7 +57,8 @@ namespace CapaDatos
         {
             get {
                 _connection_Proveedor = new SqlConnection();
-                _connection_Proveedor.ConnectionString = string.Format("Data Source = DESKTOP\\SQLDESKTOP; Initial Catalog = BodegaBD; User Id = sa; Password = 123321;");
+                //_connection_Proveedor.ConnectionString = string.Format("Data Source = DESKTOP\\SQLDESKTOP; Initial Catalog = BodegaBD; User Id = sa; Password = 123321;");
+                _connection_Proveedor.ConnectionString = string.Format("Data Source = DESKTOP-T7DQ6B1; Initial Catalog = BodegaBD; User Id = sa; Password = 12345;");
                 return _connection_Proveedor;
             }
         }
