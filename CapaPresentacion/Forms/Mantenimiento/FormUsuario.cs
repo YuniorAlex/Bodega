@@ -61,7 +61,7 @@ namespace CapaPresentacion.Forms
             _cnUsuario.AgregarDni(txt_Dni.Text);
             _cnUsuario.AgregarCorreo(txt_Correo.Text);
             _cnUsuario.AgregarDireccion(txt_Direccion.Text);
-            _cnUsuario.AgregarRol(Convert.ToInt32(cbx_Rol.SelectedIndex));
+            _cnUsuario.AgregarRol(Convert.ToInt32(cbx_Rol.SelectedIndex+1));
             _cnUsuario.AgregarEstado(Convert.ToBoolean(cbx_Estado.SelectedIndex));
             _cnUsuario.Procesar();
         }
