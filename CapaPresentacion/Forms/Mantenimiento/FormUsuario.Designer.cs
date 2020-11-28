@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuario));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewusuario = new System.Windows.Forms.DataGridView();
-            this.idusuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.txttproveedor = new System.Windows.Forms.TextBox();
@@ -71,6 +62,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_Apaterno = new System.Windows.Forms.TextBox();
+            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -91,9 +91,10 @@
             // dataGridViewusuario
             // 
             this.dataGridViewusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewusuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(165)))), ((int)(((byte)(168)))));
+            this.dataGridViewusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewusuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewusuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idusuario,
             this.usuario,
             this.nombres,
             this.apaterno,
@@ -105,58 +106,14 @@
             this.estado});
             this.dataGridViewusuario.Location = new System.Drawing.Point(27, 334);
             this.dataGridViewusuario.Name = "dataGridViewusuario";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(165)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewusuario.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewusuario.Size = new System.Drawing.Size(1000, 205);
             this.dataGridViewusuario.TabIndex = 9;
-            // 
-            // idusuario
-            // 
-            this.idusuario.HeaderText = "Cod Usuario";
-            this.idusuario.Name = "idusuario";
-            // 
-            // usuario
-            // 
-            this.usuario.HeaderText = "Usuario";
-            this.usuario.Name = "usuario";
-            // 
-            // nombres
-            // 
-            this.nombres.HeaderText = "Nombres";
-            this.nombres.Name = "nombres";
-            // 
-            // apaterno
-            // 
-            this.apaterno.HeaderText = "Apellido Paterno";
-            this.apaterno.Name = "apaterno";
-            // 
-            // amaterno
-            // 
-            this.amaterno.HeaderText = "Apellido Materno";
-            this.amaterno.Name = "amaterno";
-            // 
-            // dni
-            // 
-            this.dni.HeaderText = "Dni";
-            this.dni.Name = "dni";
-            // 
-            // correo
-            // 
-            this.correo.HeaderText = "Correo";
-            this.correo.Name = "correo";
-            // 
-            // direccion
-            // 
-            this.direccion.HeaderText = "Direccion";
-            this.direccion.Name = "direccion";
-            // 
-            // rol
-            // 
-            this.rol.HeaderText = "Rol";
-            this.rol.Name = "rol";
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "Estado";
-            this.estado.Name = "estado";
             // 
             // pictureBox1
             // 
@@ -340,6 +297,7 @@
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(200, 23);
             this.txt_pass.TabIndex = 2;
+            this.txt_pass.UseSystemPasswordChar = true;
             // 
             // cbx_Rol
             // 
@@ -421,6 +379,9 @@
             this.cbx_Estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
             this.cbx_Estado.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_Estado.FormattingEnabled = true;
+            this.cbx_Estado.Items.AddRange(new object[] {
+            "ACTIVO",
+            "NO ACTIVO"});
             this.cbx_Estado.Location = new System.Drawing.Point(512, 124);
             this.cbx_Estado.Name = "cbx_Estado";
             this.cbx_Estado.Size = new System.Drawing.Size(200, 23);
@@ -453,6 +414,7 @@
             this.txt_Dni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(245)))), ((int)(((byte)(222)))));
             this.txt_Dni.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Dni.Location = new System.Drawing.Point(512, 34);
+            this.txt_Dni.MaxLength = 8;
             this.txt_Dni.Name = "txt_Dni";
             this.txt_Dni.Size = new System.Drawing.Size(200, 23);
             this.txt_Dni.TabIndex = 4;
@@ -531,6 +493,51 @@
             this.txt_Apaterno.Size = new System.Drawing.Size(200, 23);
             this.txt_Apaterno.TabIndex = 5;
             // 
+            // usuario
+            // 
+            this.usuario.HeaderText = "Usuario";
+            this.usuario.Name = "usuario";
+            // 
+            // nombres
+            // 
+            this.nombres.HeaderText = "Nombres";
+            this.nombres.Name = "nombres";
+            // 
+            // apaterno
+            // 
+            this.apaterno.HeaderText = "Apellido Paterno";
+            this.apaterno.Name = "apaterno";
+            // 
+            // amaterno
+            // 
+            this.amaterno.HeaderText = "Apellido Materno";
+            this.amaterno.Name = "amaterno";
+            // 
+            // dni
+            // 
+            this.dni.HeaderText = "Dni";
+            this.dni.Name = "dni";
+            // 
+            // correo
+            // 
+            this.correo.HeaderText = "Correo";
+            this.correo.Name = "correo";
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "Direccion";
+            this.direccion.Name = "direccion";
+            // 
+            // rol
+            // 
+            this.rol.HeaderText = "Rol";
+            this.rol.Name = "rol";
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "Estado";
+            this.estado.Name = "estado";
+            // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -597,7 +604,6 @@
         private System.Windows.Forms.TextBox txt_Apaterno;
         private System.Windows.Forms.ComboBox cbx_Estado;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idusuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombres;
         private System.Windows.Forms.DataGridViewTextBoxColumn apaterno;

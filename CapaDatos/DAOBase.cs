@@ -41,27 +41,26 @@ namespace CapaDatos
         }
         public CommandType _queryType = CommandType.Text;
         
-
-        //private IDbConnection connection()
-        //{
-
-        //    _connection = new SqlConnection();
-        //    _connection.ConnectionString = "Data Source= DESKTOP\\SQLDESKTOP; Initial Catalog = BodegaBD; User ID = sa; Password =123321";
-
-        //    //CONEXION RONY XD
-        //    //_connection.ConnectionString = "Server=JRONY;Database=BodegaBD; User Id=sa; Password=123;";
-
-        //    return _connection;
-        //}
         private IDbConnection _connection
-        {
-            get {
+        {/*====CONEXION RONY======*/
+            get
+            {
                 _connection_Proveedor = new SqlConnection();
-                _connection_Proveedor.ConnectionString = string.Format("Data Source = DESKTOP\\SQLDESKTOP; Initial Catalog = BodegaBD; User Id = sa; Password = 123321;");
+                _connection_Proveedor.ConnectionString = string.Format("Data Source = JRONY; Initial Catalog = BodegaBD; User Id = sa; Password = 123;");
                 return _connection_Proveedor;
             }
         }
-       
+
+
+        ////private IDbConnection _connection
+        ////{
+        ////    get {
+        ////        _connection_Proveedor = new SqlConnection();
+        ////        _connection_Proveedor.ConnectionString = string.Format("Data Source = DESKTOP\\SQLDESKTOP; Initial Catalog = BodegaBD; User Id = sa; Password = 123321;");
+        ////        return _connection_Proveedor;
+        ////    }
+        ////}
+
         public Resultado<T> Insertar<T>()
         {
             Resultado<T> _result = new Resultado<T>();
