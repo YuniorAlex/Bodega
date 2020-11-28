@@ -40,26 +40,15 @@ namespace CapaDatos
             set { _parametersValues = value; }
         }
         public CommandType _queryType = CommandType.Text;
-        
         private IDbConnection _connection
-        {/*====CONEXION RONY======*/
+        {
             get
             {
                 _connection_Proveedor = new SqlConnection();
-                _connection_Proveedor.ConnectionString = string.Format("Data Source = JRONY; Initial Catalog = BodegaBD; User Id = sa; Password = 123;");
+                _connection_Proveedor.ConnectionString = string.Format("Data Source = DESKTOP\\SQLDESKTOP; Initial Catalog = BodegaBD; User Id = sa; Password = 123321;");
                 return _connection_Proveedor;
             }
         }
-
-
-        ////private IDbConnection _connection
-        ////{
-        ////    get {
-        ////        _connection_Proveedor = new SqlConnection();
-        ////        _connection_Proveedor.ConnectionString = string.Format("Data Source = DESKTOP\\SQLDESKTOP; Initial Catalog = BodegaBD; User Id = sa; Password = 123321;");
-        ////        return _connection_Proveedor;
-        ////    }
-        ////}
 
         public Resultado<T> Insertar<T>()
         {
